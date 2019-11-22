@@ -1,16 +1,30 @@
 # PCB-Motor
 
-Nominal speed: 500 RPM
-Nominal torque: 250 mN.m
-Nominal output power: 13 W
-Pole: 16
-Frequency: 66.67 Hz
-Iphase: 1.4 Arms
-Core width: 3.5 mm
-Core inner diameter: 50 mm
-Core outer diameter: 92 mm
-Magnet width: 2 mm
-Air gap: 0.5 mm
-PCB width: 1 mm
-PCB inner diameter: 50 mm
-PCB outer diameter: 98 mm
+* Nominal speed: 500 RPM
+
+* Nominal torque: 250 mN.m
+
+* Nominal output power: 13 W
+
+* Pole: 16
+
+* Frequency: 66.67 Hz
+
+* Iphase: 1.4 Arms
+
+* Core width: 3.5 mm
+
+* Core inner diameter: 50 mm
+
+* Core outer diameter: 92 mm
+
+* Magnet width: 2 mm
+
+* Air gap: 0.5 mm
+
+* PCB width: 1 mm
+
+* PCB inner diameter: 50 mm
+
+* PCB outer diameter: 98 mm
+
