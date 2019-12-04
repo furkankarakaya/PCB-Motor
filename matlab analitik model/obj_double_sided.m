@@ -11,7 +11,8 @@ i_a = x(4)/10;   %Arms,per phase current at nominal speed
 
 
 %constants
-J = 25e6;  %A/m2
+% J = 15e6;  %A/m2
+w_cu = 0.0008; %m, copper width
 cu_thick_oz = 2; %oz
 % rin_pcb = 25e-3;   %m, pcb rout
 mag_angle = 144;   %elec_deg,  magnet angle
@@ -22,19 +23,14 @@ n = 500;       %rpm, nominal speed
 d_trace = 0.2e-3;    %m, distance between two traces
 % t_el = 0.15;    %Nm, nominal torque
 % bear = 5e-3;   %m, bearing thickness in radial direction
-temp_pcb = 60;   %deg, coils operating temperature
-
-g_pcb_overall = 1.6e-3;    %m,overall pcb thickness
-
+temp_pcb = 80;   %deg, coils operating temperature
+g_pcb_overall = 1e-3;    %m,overall pcb thickness
 g_cu = cu_thick_oz*0.0347e-3;   %m, copper thickness per layer
-area_cu = i_a/J;   %m2, copper area
-w_cu_unrounded = area_cu/g_cu;    %m, copper trace width
-w_cu = round(w_cu_unrounded,4);     %rounding nearest integer in mm
-
+area_cu = w_cu*g_cu;   %m2, copper area
+% w_cu_unrounded = area_cu/g_cu;    %m, copper trace width
+% w_cu = round(w_cu_unrounded,4);     %rounding nearest integer in mm
 g_cl = 0.5e-3;
-
 g_magnetic = 2*g_cl+g_pcb_overall;    %m, magnetic air gap
-
 n_ph = layer*np*c;  %number of turns per phase
 cs_main_el = p*180/m/c;       %electrical deg, coil span
 cs_main_mec = 360/c/m;        %mech deg, coil span
@@ -299,7 +295,7 @@ vol_pcb = pi*(rout_pcb^2-rin_pcb^2)*(g_pcb_overall-g_cu*layer);   %m3, pcb volum
 m_pcb_fr4 = vol_pcb*dens_pcb_fr4;   %kg, mass of pcb fr4
 
 vol_per_mag = pi*(rout_mag^2-rin_mag^2)*mag_angle/180*l_mag/p;  %m3, magnet volume per magnet
-m_mag = 2*vol_per_mag*p*dens_mag;   %kg, total magnet mass, p tane
+m_mag = k_mag*vol_per_mag*p*dens_mag;   %kg, total magnet mass, p tane
 
 vol_per_core = pi*(rout_core^2-rin_core^2)*l_core;  %m3, tek taraflý core vol
 m_core = vol_per_core*2*dens_core;  %kg, total core mass

@@ -7,7 +7,7 @@ results = [];
 p = 16;
 c = 4;   %number of coils per phase
 
-layer = 6;
+layer = 2;
 
 % system(sprintf('open_maxwell.vbs "%s"', 'C:\Users\DELL\Documents\pcb-motor\matlab analitik model')); %open maxwell first
 
@@ -16,11 +16,11 @@ layer = 6;
 rout_pcb_max = 50;   %mm, max outer radius
 rout_pcb_min = 50;   %mm, min outer radius
 
-i_a_max = 5;   %Arms, max phase current
+i_a_max = 2;   %Arms, max phase current
 i_a_min = 0.1;   %Arms, min phase current
 
-np_max = 15;    %max sarmal sayýsý
-np_min = 1;     %min sarmal sayýsý
+np_max = 7;    %max sarmal sayýsý
+np_min = 7;     %min sarmal sayýsý
 
 k_mag_max = 5;  % magnet kac tane üst üste
 k_mag_min = 1;  % magnet kac tane üst üste
@@ -38,8 +38,14 @@ options.CrossoverFraction = 0.3;  %Elit sayýsý haricinde kalanlarýn kaçý mutasyo
 options.PopulationSize = 400;  % nufüs
 
 % [x,fval] = ga(@obj_single_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
-[x,fval] = ga(@obj_single_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
-
+[x,fval] = ga(@obj_double_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
 
 results = unique(results,'rows');
 results = sortrows(results,size (results,2)); %obj fcn a göre sýrala
+[rout_pcb*1e3 np i_a l_mag*1e3 l_core*1e3 res_ph ind_ph eff*100 e_a_h_rms(1) thd_ph thd_ll b_avg deflection m_total t_el obj]; %kaydedilen sonuclar
+%% Excel Writing
+
+C=[{'PCB Outer Diameter (cm)','Number of Turns','Phase Current (Arms)','Magnet Length (mm)','Core Length (mm)','Resistance per Phase (Ohm)','Efficiency','Inductance per Phase(H)','Induced Voltage (V)','THD','THD','Baverage (T)','Deflection','Total Mass (kg)','Torque (N.m)','Obj'};num2cell(results)];
+T=cell2table(C);
+filename = 'double_sided.xlsx';
+writetable(T,filename);
