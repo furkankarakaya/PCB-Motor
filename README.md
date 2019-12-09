@@ -1,18 +1,18 @@
 # PCB-Motor
 
-* Nominal speed: 500 RPM
+* Nominal speed: 1500 RPM
 
-* Nominal torque: 250 mN.m
+* Nominal torque: 230 mN.m
 
-* Nominal output power: 13 W
+* Nominal output power: 36 W
 
 * Pole: 16
 
-* Frequency: 66.67 Hz
+* Frequency: 200 Hz
 
-* Iphase: 1.4 Arms
+* Iphase: 2 Arms
 
-* Core width: 3.5 mm
+* Core width: 5 mm
 
 * Core inner diameter: 50 mm
 
