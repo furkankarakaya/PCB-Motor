@@ -38,14 +38,14 @@ options.CrossoverFraction = 0.3;  %Elit sayýsý haricinde kalanlarýn kaçý mutasyo
 options.PopulationSize = 400;  % nufüs
 
 % [x,fval] = ga(@obj_single_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
-[x,fval] = ga(@obj_double_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
+[x,fval,exitflag,output,population,scores] = ga(@obj_double_sided,numel(LB),[],[],[],[],LB,UB,[],[1,2,3,4],options);
 
 results = unique(results,'rows');
 results = sortrows(results,size (results,2)); %obj fcn a göre sýrala
-[rout_pcb_max*1e3 np i_a l_mag*1e3 l_core*1e3 res_ph ind_ph eff*100 e_a_h_rms(1) thd_ph thd_ll b_avg deflection m_total t_el obj]; %kaydedilen sonuclar
+%  [rout_pcb_max*1e3 np_max i_a l_mag*1e3 l_core*1e3 res_ph ind_ph eff*100 e_a_h_rms(1) thd_ph thd_ll b_avg deflection m_total t_el obj]; %kaydedilen sonuclar
 %% Excel Writing
-% 
-% C=[{'PCB Outer Diameter (cm)','Number of Turns','Phase Current (Arms)','Magnet Length (mm)','Core Length (mm)','Resistance per Phase (Ohm)','Efficiency','Inductance per Phase(H)','Induced Voltage (V)','THD','THD','Baverage (T)','Deflection','Total Mass (kg)','Torque (N.m)','Obj'};num2cell(results)];
-% T=cell2table(C);
-% filename = 'double_sided.xlsx';
-% writetable(T,filename);
+
+C=[{'PCB Outer Diameter (cm)','Number of Turns','Phase Current (Arms)','Magnet Length (mm)','Core Length (mm)','Resistance per Phase (Ohm)','Inductance per Phase(H)','Efficiency','Induced Voltage (V)','THD','THD','Baverage (T)','Deflection','Total Mass (kg)','Torque (N.m)','Obj'};num2cell(results)];
+T=cell2table(C);
+filename = 'double_sided_1500.xlsx';
+writetable(T,filename);
