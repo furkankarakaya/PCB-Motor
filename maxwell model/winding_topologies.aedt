@@ -8586,6 +8586,108 @@ $begin 'AnsoftProject'
 							RangeEnd='0.01s'
 							SaveSingleField=false
 						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
+						$begin 'Subrange'
+							RangeType='SinglePoints'
+							RangeStart='0.01s'
+							RangeEnd='0.01s'
+							SaveSingleField=false
+						$end 'Subrange'
 					$end 'SweepRanges'
 					CacheSaveKind='Count'
 					NumberSolveSteps=1
@@ -8864,7 +8966,7 @@ $begin 'AnsoftProject'
 				VariableProp('delta_x1', 'UD', '', 'd_trace/sin(teta1) meter')
 				VariableProp('w_cu', 'UD', '', '0.8mm')
 				VariableProp('delta_x11', 'UD', '', 'w_cu/sin(teta1)')
-				VariableProp('g_cl', 'UD', '', '0.5mm')
+				VariableProp('g_cl', 'UD', '', '1mm')
 				VariableProp('rin_pcb', 'UD', '', '25mm')
 				VariableProp('l_core', 'UD', '', '5mm')
 				VariableProp('l_mag', 'UD', '', '2mm')
@@ -8904,7 +9006,7 @@ $begin 'AnsoftProject'
 			WorkingCS=1
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=354
+				DataVersion=356
 				NativeKernel='ACIS'
 				NativeKernelVersionID=13
 				Units='mm'
@@ -8921,7 +9023,7 @@ $begin 'AnsoftProject'
 							IDServerObjectTypeID=0
 							IDServerRangeMin=0
 							IDServerRangeMax=2146483647
-							NextUniqueID=110527
+							NextUniqueID=110569
 							MoveBackwards=false
 						$end 'AnsoftRangedIDServer'
 						$begin 'AnsoftRangedIDServer'
@@ -12448,10 +12550,10 @@ $begin 'AnsoftProject'
 														FaceTopol(2, 2, 2, 2)
 														$begin 'FaceGeometry'
 															Area=1445.1326206513
-															FcUVMid(46, 0, 5.5)
+															FcUVMid(46, 0, 6)
 															$begin 'FcTolVts'
-																TolVt(46, 0, 8, 0)
-																TolVt(46, 0, 3, 0)
+																TolVt(46, 0, 8.5, 0)
+																TolVt(46, 0, 3.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12463,10 +12565,10 @@ $begin 'AnsoftProject'
 														FaceTopol(2, 2, 2, 2)
 														$begin 'FaceGeometry'
 															Area=785.398163397448
-															FcUVMid(25, 0, 5.5)
+															FcUVMid(25, 0, 6)
 															$begin 'FcTolVts'
-																TolVt(25, 0, 8, 0)
-																TolVt(25, 0, 3, 0)
+																TolVt(25, 0, 8.5, 0)
+																TolVt(25, 0, 3.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12478,10 +12580,10 @@ $begin 'AnsoftProject'
 														FaceTopol(2, 2, 2, 2)
 														$begin 'FaceGeometry'
 															Area=4684.11464650238
-															FcUVMid(-3.5527136788005e-15, 3.5527136788005e-15, 8)
+															FcUVMid(-3.5527136788005e-15, 3.5527136788005e-15, 8.5)
 															$begin 'FcTolVts'
-																TolVt(25, 0, 8, 0)
-																TolVt(46, 0, 8, 0)
+																TolVt(25, 0, 8.5, 0)
+																TolVt(46, 0, 8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12493,10 +12595,10 @@ $begin 'AnsoftProject'
 														FaceTopol(2, 2, 2, 2)
 														$begin 'FaceGeometry'
 															Area=4684.11464650238
-															FcUVMid(-3.5527136788005e-15, -3.5527136788005e-15, 3)
+															FcUVMid(-3.5527136788005e-15, -3.5527136788005e-15, 3.5)
 															$begin 'FcTolVts'
-																TolVt(25, 0, 3, 0)
-																TolVt(46, 0, 3, 0)
+																TolVt(25, 0, 3.5, 0)
+																TolVt(46, 0, 3.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12508,58 +12610,58 @@ $begin 'AnsoftProject'
 													ID=17801
 													EdgeFaces(17797, 17798)
 													$begin 'EdTolVts'
-														TolVt(46, 0, 8, 0)
+														TolVt(46, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-46, -5.63337527607782e-15, 8)
+													EdgeMidPoint(-46, -5.63337527607782e-15, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=17802
 													EdgeFaces(17797, 17800)
 													$begin 'EdTolVts'
-														TolVt(46, 0, 3, 0)
+														TolVt(46, 0, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-46, 5.63337527607782e-15, 3)
+													EdgeMidPoint(-46, 5.63337527607782e-15, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=2
 													ID=17803
 													EdgeFaces(17798, 17799)
 													$begin 'EdTolVts'
-														TolVt(25, 0, 8, 0)
+														TolVt(25, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-25, 3.06161699786838e-15, 8)
+													EdgeMidPoint(-25, 3.06161699786838e-15, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=17804
 													EdgeFaces(17799, 17800)
 													$begin 'EdTolVts'
-														TolVt(25, 0, 3, 0)
+														TolVt(25, 0, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-25, -3.06161699786838e-15, 3)
+													EdgeMidPoint(-25, -3.06161699786838e-15, 3.5)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=17805
-													VtPos(46, 0, 8)
+													VtPos(46, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=17806
-													VtPos(46, 0, 3)
+													VtPos(46, 0, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=17807
-													VtPos(25, 0, 8)
+													VtPos(25, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=17808
-													VtPos(25, 0, 3)
+													VtPos(25, 0, 3.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -12608,12 +12710,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=105
-															FcUVMid(0, 35.5, 5.5)
+															FcUVMid(0, 35.5, 6)
 															$begin 'FcTolVts'
-																TolVt(0, 25, 3, 0)
-																TolVt(0, 25, 8, 0)
-																TolVt(0, 46, 8, 0)
-																TolVt(0, 46, 3, 0)
+																TolVt(0, 25, 3.5, 0)
+																TolVt(0, 25, 8.5, 0)
+																TolVt(0, 46, 8.5, 0)
+																TolVt(0, 46, 3.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12625,12 +12727,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=105
-															FcUVMid(35.5, 0, 5.5)
+															FcUVMid(35.5, 0, 6)
 															$begin 'FcTolVts'
-																TolVt(25, 0, 8, 0)
-																TolVt(25, 0, 3, 0)
-																TolVt(46, 0, 3, 0)
-																TolVt(46, 0, 8, 0)
+																TolVt(25, 0, 8.5, 0)
+																TolVt(25, 0, 3.5, 0)
+																TolVt(46, 0, 3.5, 0)
+																TolVt(46, 0, 8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12642,102 +12744,102 @@ $begin 'AnsoftProject'
 													ID=67740
 													EdgeFaces(17799, 67736)
 													$begin 'EdTolVts'
-														TolVt(0, 25, 8, 0)
-														TolVt(0, 25, 3, 0)
+														TolVt(0, 25, 8.5, 0)
+														TolVt(0, 25, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 25, 5.5)
+													EdgeMidPoint(0, 25, 6)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=67741
 													EdgeFaces(17798, 67736)
 													$begin 'EdTolVts'
-														TolVt(0, 46, 8, 0)
-														TolVt(0, 25, 8, 0)
+														TolVt(0, 46, 8.5, 0)
+														TolVt(0, 25, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 35.5, 8)
+													EdgeMidPoint(0, 35.5, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=2
 													ID=67738
 													EdgeFaces(17797, 67736)
 													$begin 'EdTolVts'
-														TolVt(0, 46, 3, 0)
-														TolVt(0, 46, 8, 0)
+														TolVt(0, 46, 3.5, 0)
+														TolVt(0, 46, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 46, 5.5)
+													EdgeMidPoint(0, 46, 6)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=67739
 													EdgeFaces(17800, 67736)
 													$begin 'EdTolVts'
-														TolVt(0, 25, 3, 0)
-														TolVt(0, 46, 3, 0)
+														TolVt(0, 25, 3.5, 0)
+														TolVt(0, 46, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 35.5, 3)
+													EdgeMidPoint(0, 35.5, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=4
 													ID=67744
 													EdgeFaces(17799, 67737)
 													$begin 'EdTolVts'
-														TolVt(25, 0, 3, 0)
-														TolVt(25, 0, 8, 0)
+														TolVt(25, 0, 3.5, 0)
+														TolVt(25, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(25, 0, 5.5)
+													EdgeMidPoint(25, 0, 6)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=5
 													ID=67745
 													EdgeFaces(17800, 67737)
 													$begin 'EdTolVts'
-														TolVt(46, 0, 3, 0)
-														TolVt(25, 0, 3, 0)
+														TolVt(46, 0, 3.5, 0)
+														TolVt(25, 0, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.5, 0, 3)
+													EdgeMidPoint(35.5, 0, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=6
 													ID=67742
 													EdgeFaces(17797, 67737)
 													$begin 'EdTolVts'
-														TolVt(46, 0, 8, 0)
-														TolVt(46, 0, 3, 0)
+														TolVt(46, 0, 8.5, 0)
+														TolVt(46, 0, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(46, 0, 5.5)
+													EdgeMidPoint(46, 0, 6)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=7
 													ID=67743
 													EdgeFaces(17798, 67737)
 													$begin 'EdTolVts'
-														TolVt(25, 0, 8, 0)
-														TolVt(46, 0, 8, 0)
+														TolVt(25, 0, 8.5, 0)
+														TolVt(46, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.5, 0, 8)
+													EdgeMidPoint(35.5, 0, 8.5)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=67746
-													VtPos(0, 25, 3)
+													VtPos(0, 25, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=67747
-													VtPos(0, 25, 8)
+													VtPos(0, 25, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=67748
-													VtPos(0, 46, 8)
+													VtPos(0, 46, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=67749
-													VtPos(0, 46, 3)
+													VtPos(0, 46, 3.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -12857,13 +12959,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=74.2500000000002
-															FcUVMid(0, 24.75, -1.11022302462516e-16)
+															Area=99.0000000000002
+															FcUVMid(0, 24.75, -2.22044604925031e-16)
 															$begin 'FcTolVts'
-																TolVt(0, 0, 0.75, 0)
-																TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
-																TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
-																TolVt(0, 0, -0.75, 0)
+																TolVt(0, 0, 1, 0)
+																TolVt(1.06581410364015e-14, 49.5, 1, 0)
+																TolVt(1.06581410364015e-14, 49.5, -1, 0)
+																TolVt(0, 0, -1, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12874,13 +12976,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=116.631627264521
-															FcUVMid(35.0017856687341, 35.0017856687341, 0)
+															Area=155.508836352695
+															FcUVMid(35.0017856687341, 35.0017856687341, -1.11022302462516e-16)
 															$begin 'FcTolVts'
-																TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
-																TolVt(49.5, 0, 0.75, 0)
-																TolVt(49.5, 0, -0.75, 0)
-																TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
+																TolVt(1.06581410364015e-14, 49.5, 1, 0)
+																TolVt(49.5, 0, 1, 0)
+																TolVt(49.5, 0, -1, 0)
+																TolVt(1.06581410364015e-14, 49.5, -1, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12891,13 +12993,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=74.2500000000001
-															FcUVMid(24.75, 0, -1.11022302462516e-16)
+															Area=99.0000000000002
+															FcUVMid(24.75, 0, -2.22044604925031e-16)
 															$begin 'FcTolVts'
-																TolVt(49.5, 0, 0.75, 0)
-																TolVt(0, 0, 0.75, 0)
-																TolVt(0, 0, -0.75, 0)
-																TolVt(49.5, 0, -0.75, 0)
+																TolVt(49.5, 0, 1, 0)
+																TolVt(0, 0, 1, 0)
+																TolVt(0, 0, -1, 0)
+																TolVt(49.5, 0, -1, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12909,11 +13011,11 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 3, 3, 3)
 														$begin 'FaceGeometry'
 															Area=1924.4218498646
-															FcUVMid(24.75, 24.75, 0.75)
+															FcUVMid(24.75, 24.75, 1)
 															$begin 'FcTolVts'
-																TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
-																TolVt(0, 0, 0.75, 0)
-																TolVt(49.5, 0, 0.75, 0)
+																TolVt(1.06581410364015e-14, 49.5, 1, 0)
+																TolVt(0, 0, 1, 0)
+																TolVt(49.5, 0, 1, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12925,11 +13027,11 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 3, 3, 3)
 														$begin 'FaceGeometry'
 															Area=1924.4218498646
-															FcUVMid(24.75, 24.75, -0.75)
+															FcUVMid(24.75, 24.75, -1)
 															$begin 'FcTolVts'
-																TolVt(49.5, 0, -0.75, 0)
-																TolVt(0, 0, -0.75, 0)
-																TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
+																TolVt(49.5, 0, -1, 0)
+																TolVt(0, 0, -1, 0)
+																TolVt(1.06581410364015e-14, 49.5, -1, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -12941,18 +13043,18 @@ $begin 'AnsoftProject'
 													ID=87481
 													EdgeFaces(87476, 87479)
 													$begin 'EdTolVts'
-														TolVt(0, 0, 0.75, 0)
-														TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
+														TolVt(0, 0, 1, 0)
+														TolVt(1.06581410364015e-14, 49.5, 1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 24.75, 0.75)
+													EdgeMidPoint(0, 24.75, 1)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=87482
 													EdgeFaces(87476, 87477)
 													$begin 'EdTolVts'
-														TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
-														TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
+														TolVt(1.06581410364015e-14, 49.5, -1, 0)
+														TolVt(1.06581410364015e-14, 49.5, 1, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(1.06581410364015e-14, 49.5, 0)
 												$end 'Edge'
@@ -12961,18 +13063,18 @@ $begin 'AnsoftProject'
 													ID=87483
 													EdgeFaces(87476, 87480)
 													$begin 'EdTolVts'
-														TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
-														TolVt(0, 0, -0.75, 0)
+														TolVt(1.06581410364015e-14, 49.5, -1, 0)
+														TolVt(0, 0, -1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 24.75, -0.75)
+													EdgeMidPoint(0, 24.75, -1)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=87484
 													EdgeFaces(87476, 87478)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -0.75, 0)
-														TolVt(0, 0, 0.75, 0)
+														TolVt(0, 0, -1, 0)
+														TolVt(0, 0, 1, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(0, 0, 0)
 												$end 'Edge'
@@ -12981,18 +13083,18 @@ $begin 'AnsoftProject'
 													ID=87485
 													EdgeFaces(87477, 87479)
 													$begin 'EdTolVts'
-														TolVt(1.06581410364015e-14, 49.5, 0.75, 0)
-														TolVt(49.5, 0, 0.75, 0)
+														TolVt(1.06581410364015e-14, 49.5, 1, 0)
+														TolVt(49.5, 0, 1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.0017856687341, 35.0017856687341, 0.75)
+													EdgeMidPoint(35.0017856687341, 35.0017856687341, 1)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=5
 													ID=87486
 													EdgeFaces(87477, 87478)
 													$begin 'EdTolVts'
-														TolVt(49.5, 0, -0.75, 0)
-														TolVt(49.5, 0, 0.75, 0)
+														TolVt(49.5, 0, -1, 0)
+														TolVt(49.5, 0, 1, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(49.5, 0, 0)
 												$end 'Edge'
@@ -13001,62 +13103,62 @@ $begin 'AnsoftProject'
 													ID=87487
 													EdgeFaces(87477, 87480)
 													$begin 'EdTolVts'
-														TolVt(49.5, 0, -0.75, 0)
-														TolVt(1.06581410364015e-14, 49.5, -0.75, 0)
+														TolVt(49.5, 0, -1, 0)
+														TolVt(1.06581410364015e-14, 49.5, -1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.0017856687341, 35.0017856687341, -0.75)
+													EdgeMidPoint(35.0017856687341, 35.0017856687341, -1)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=7
 													ID=87488
 													EdgeFaces(87478, 87479)
 													$begin 'EdTolVts'
-														TolVt(49.5, 0, 0.75, 0)
-														TolVt(0, 0, 0.75, 0)
+														TolVt(49.5, 0, 1, 0)
+														TolVt(0, 0, 1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(24.75, 0, 0.75)
+													EdgeMidPoint(24.75, 0, 1)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=8
 													ID=87489
 													EdgeFaces(87478, 87480)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -0.75, 0)
-														TolVt(49.5, 0, -0.75, 0)
+														TolVt(0, 0, -1, 0)
+														TolVt(49.5, 0, -1, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(24.75, 0, -0.75)
+													EdgeMidPoint(24.75, 0, -1)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=87490
-													VtPos(0, 0, 0.75)
+													VtPos(0, 0, 1)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=87491
-													VtPos(1.06581410364015e-14, 49.5, 0.75)
+													VtPos(1.06581410364015e-14, 49.5, 1)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=87492
-													VtPos(1.06581410364015e-14, 49.5, -0.75)
+													VtPos(1.06581410364015e-14, 49.5, -1)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=87493
-													VtPos(0, 0, -0.75)
+													VtPos(0, 0, -1)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=4
 													ID=87494
-													VtPos(49.5, 0, 0.75)
+													VtPos(49.5, 0, 1)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=5
 													ID=87495
-													VtPos(49.5, 0, -0.75)
+													VtPos(49.5, 0, -1)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -13154,13 +13256,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=816.000000000001
+															Area=867.000000000001
 															FcUVMid(0, 25.5, -1.77635683940025e-15)
 															$begin 'FcTolVts'
-																TolVt(0, 0, 8, 0)
-																TolVt(0, 51, 8, 0)
-																TolVt(0, 51, -8, 0)
-																TolVt(0, 0, -8, 0)
+																TolVt(0, 0, 8.5, 0)
+																TolVt(0, 51, 8.5, 0)
+																TolVt(0, 51, -8.5, 0)
+																TolVt(0, 0, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13171,13 +13273,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=1281.76980266464
+															Area=1361.88041533118
 															FcUVMid(36.0624458405139, 36.0624458405139, 0)
 															$begin 'FcTolVts'
-																TolVt(0, 51, 8, 0)
-																TolVt(51, 0, 8, 0)
-																TolVt(51, 0, -8, 0)
-																TolVt(0, 51, -8, 0)
+																TolVt(0, 51, 8.5, 0)
+																TolVt(51, 0, 8.5, 0)
+																TolVt(51, 0, -8.5, 0)
+																TolVt(0, 51, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13188,13 +13290,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=816.000000000001
+															Area=867.000000000001
 															FcUVMid(25.5, 0, -1.77635683940025e-15)
 															$begin 'FcTolVts'
-																TolVt(51, 0, 8, 0)
-																TolVt(0, 0, 8, 0)
-																TolVt(0, 0, -8, 0)
-																TolVt(51, 0, -8, 0)
+																TolVt(51, 0, 8.5, 0)
+																TolVt(0, 0, 8.5, 0)
+																TolVt(0, 0, -8.5, 0)
+																TolVt(51, 0, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13206,11 +13308,11 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 3, 3, 3)
 														$begin 'FaceGeometry'
 															Area=2042.82062299676
-															FcUVMid(25.5, 25.5, 8)
+															FcUVMid(25.5, 25.5, 8.5)
 															$begin 'FcTolVts'
-																TolVt(0, 51, 8, 0)
-																TolVt(0, 0, 8, 0)
-																TolVt(51, 0, 8, 0)
+																TolVt(0, 51, 8.5, 0)
+																TolVt(0, 0, 8.5, 0)
+																TolVt(51, 0, 8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13222,11 +13324,11 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 3, 3, 3)
 														$begin 'FaceGeometry'
 															Area=2042.82062299676
-															FcUVMid(25.5, 25.5, -8)
+															FcUVMid(25.5, 25.5, -8.5)
 															$begin 'FcTolVts'
-																TolVt(51, 0, -8, 0)
-																TolVt(0, 0, -8, 0)
-																TolVt(0, 51, -8, 0)
+																TolVt(51, 0, -8.5, 0)
+																TolVt(0, 0, -8.5, 0)
+																TolVt(0, 51, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13238,18 +13340,18 @@ $begin 'AnsoftProject'
 													ID=17271
 													EdgeFaces(17266, 17269)
 													$begin 'EdTolVts'
-														TolVt(0, 0, 8, 0)
-														TolVt(0, 51, 8, 0)
+														TolVt(0, 0, 8.5, 0)
+														TolVt(0, 51, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 25.5, 8)
+													EdgeMidPoint(0, 25.5, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=17272
 													EdgeFaces(17266, 17267)
 													$begin 'EdTolVts'
-														TolVt(0, 51, -8, 0)
-														TolVt(0, 51, 8, 0)
+														TolVt(0, 51, -8.5, 0)
+														TolVt(0, 51, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(0, 51, 0)
 												$end 'Edge'
@@ -13258,18 +13360,18 @@ $begin 'AnsoftProject'
 													ID=17273
 													EdgeFaces(17266, 17270)
 													$begin 'EdTolVts'
-														TolVt(0, 51, -8, 0)
-														TolVt(0, 0, -8, 0)
+														TolVt(0, 51, -8.5, 0)
+														TolVt(0, 0, -8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, 25.5, -8)
+													EdgeMidPoint(0, 25.5, -8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=17274
 													EdgeFaces(17266, 17268)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(0, 0, 0)
 												$end 'Edge'
@@ -13278,18 +13380,18 @@ $begin 'AnsoftProject'
 													ID=17275
 													EdgeFaces(17267, 17269)
 													$begin 'EdTolVts'
-														TolVt(0, 51, 8, 0)
-														TolVt(51, 0, 8, 0)
+														TolVt(0, 51, 8.5, 0)
+														TolVt(51, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(36.0624458405139, 36.0624458405139, 8)
+													EdgeMidPoint(36.0624458405139, 36.0624458405139, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=5
 													ID=17276
 													EdgeFaces(17267, 17268)
 													$begin 'EdTolVts'
-														TolVt(51, 0, -8, 0)
-														TolVt(51, 0, 8, 0)
+														TolVt(51, 0, -8.5, 0)
+														TolVt(51, 0, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(51, 0, 0)
 												$end 'Edge'
@@ -13298,62 +13400,62 @@ $begin 'AnsoftProject'
 													ID=17277
 													EdgeFaces(17267, 17270)
 													$begin 'EdTolVts'
-														TolVt(51, 0, -8, 0)
-														TolVt(0, 51, -8, 0)
+														TolVt(51, 0, -8.5, 0)
+														TolVt(0, 51, -8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(36.0624458405139, 36.0624458405139, -8)
+													EdgeMidPoint(36.0624458405139, 36.0624458405139, -8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=7
 													ID=17278
 													EdgeFaces(17268, 17269)
 													$begin 'EdTolVts'
-														TolVt(51, 0, 8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(51, 0, 8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(25.5, 0, 8)
+													EdgeMidPoint(25.5, 0, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=8
 													ID=17279
 													EdgeFaces(17268, 17270)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(51, 0, -8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(51, 0, -8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(25.5, 0, -8)
+													EdgeMidPoint(25.5, 0, -8.5)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=17280
-													VtPos(0, 0, 8)
+													VtPos(0, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=17281
-													VtPos(0, 51, 8)
+													VtPos(0, 51, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=17282
-													VtPos(0, 51, -8)
+													VtPos(0, 51, -8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=17283
-													VtPos(0, 0, -8)
+													VtPos(0, 0, -8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=4
 													ID=17284
-													VtPos(51, 0, 8)
+													VtPos(51, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=5
 													ID=17285
-													VtPos(51, 0, -8)
+													VtPos(51, 0, -8.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -13451,13 +13553,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=864
+															Area=918
 															FcUVMid(27, 0, 0)
 															$begin 'FcTolVts'
-																TolVt(54, 0, 8, 0)
-																TolVt(0, 0, 8, 0)
-																TolVt(0, 0, -8, 0)
-																TolVt(54, 0, -8, 0)
+																TolVt(54, 0, 8.5, 0)
+																TolVt(0, 0, 8.5, 0)
+																TolVt(0, 0, -8.5, 0)
+																TolVt(54, 0, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13469,18 +13571,18 @@ $begin 'AnsoftProject'
 													ID=17289
 													EdgeFaces(17288)
 													$begin 'EdTolVts'
-														TolVt(54, 0, 8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(54, 0, 8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(27, 0, 8)
+													EdgeMidPoint(27, 0, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=17290
 													EdgeFaces(17288)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(0, 0, 0)
 												$end 'Edge'
@@ -13489,18 +13591,18 @@ $begin 'AnsoftProject'
 													ID=17291
 													EdgeFaces(17288)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(54, 0, -8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(54, 0, -8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(27, 0, -8)
+													EdgeMidPoint(27, 0, -8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=17292
 													EdgeFaces(17288)
 													$begin 'EdTolVts'
-														TolVt(54, 0, -8, 0)
-														TolVt(54, 0, 8, 0)
+														TolVt(54, 0, -8.5, 0)
+														TolVt(54, 0, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(54, 0, 0)
 												$end 'Edge'
@@ -13509,22 +13611,22 @@ $begin 'AnsoftProject'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=17293
-													VtPos(54, 0, 8)
+													VtPos(54, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=17294
-													VtPos(0, 0, 8)
+													VtPos(0, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=17295
-													VtPos(0, 0, -8)
+													VtPos(0, 0, -8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=17296
-													VtPos(54, 0, -8)
+													VtPos(54, 0, -8.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -13622,13 +13724,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=864
+															Area=918
 															FcUVMid(1.65327317884893e-15, 27, 0)
 															$begin 'FcTolVts'
-																TolVt(3.30654635769785e-15, 54, 8, 0)
-																TolVt(0, 0, 8, 0)
-																TolVt(0, 0, -8, 0)
-																TolVt(3.30654635769785e-15, 54, -8, 0)
+																TolVt(3.30654635769785e-15, 54, 8.5, 0)
+																TolVt(0, 0, 8.5, 0)
+																TolVt(0, 0, -8.5, 0)
+																TolVt(3.30654635769785e-15, 54, -8.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -13640,18 +13742,18 @@ $begin 'AnsoftProject'
 													ID=17300
 													EdgeFaces(17299)
 													$begin 'EdTolVts'
-														TolVt(3.30654635769785e-15, 54, 8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(3.30654635769785e-15, 54, 8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(1.65327317884893e-15, 27, 8)
+													EdgeMidPoint(1.65327317884893e-15, 27, 8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=17301
 													EdgeFaces(17299)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(0, 0, 8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(0, 0, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(0, 0, 0)
 												$end 'Edge'
@@ -13660,18 +13762,18 @@ $begin 'AnsoftProject'
 													ID=17302
 													EdgeFaces(17299)
 													$begin 'EdTolVts'
-														TolVt(0, 0, -8, 0)
-														TolVt(3.30654635769785e-15, 54, -8, 0)
+														TolVt(0, 0, -8.5, 0)
+														TolVt(3.30654635769785e-15, 54, -8.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(1.65327317884893e-15, 27, -8)
+													EdgeMidPoint(1.65327317884893e-15, 27, -8.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=17303
 													EdgeFaces(17299)
 													$begin 'EdTolVts'
-														TolVt(3.30654635769785e-15, 54, -8, 0)
-														TolVt(3.30654635769785e-15, 54, 8, 0)
+														TolVt(3.30654635769785e-15, 54, -8.5, 0)
+														TolVt(3.30654635769785e-15, 54, 8.5, 0)
 													$end 'EdTolVts'
 													EdgeMidPoint(3.30654635769785e-15, 54, 0)
 												$end 'Edge'
@@ -13680,22 +13782,22 @@ $begin 'AnsoftProject'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=17304
-													VtPos(3.30654635769785e-15, 54, 8)
+													VtPos(3.30654635769785e-15, 54, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=17305
-													VtPos(0, 0, 8)
+													VtPos(0, 0, 8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=17306
-													VtPos(0, 0, -8)
+													VtPos(0, 0, -8.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=17307
-													VtPos(3.30654635769785e-15, 54, -8)
+													VtPos(3.30654635769785e-15, 54, -8.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -14099,12 +14201,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=41.9999999999999
-															FcUVMid(33.3057924252482, 12.287155526251, 2)
+															FcUVMid(33.3057924252482, 12.287155526251, 2.5)
 															$begin 'FcTolVts'
-																TolVt(23.4547833980621, 8.65292642693732, 3, 0)
-																TolVt(43.1568014524343, 15.9213846255647, 3, 0)
-																TolVt(43.1568014524343, 15.9213846255647, 1, 0)
-																TolVt(23.4547833980621, 8.65292642693732, 1, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14116,12 +14218,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=28.9026524130261
-															FcUVMid(45.1161228985486, 8.9741548127419, 2)
+															FcUVMid(45.1161228985486, 8.9741548127419, 2.5)
 															$begin 'FcTolVts'
-																TolVt(43.1568014524343, 15.9213846255647, 3, 0)
-																TolVt(45.9645356670733, 1.80595152491716, 3, 0)
-																TolVt(45.9645356670733, 1.80595152491716, 1, 0)
-																TolVt(43.1568014524343, 15.9213846255647, 1, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14133,12 +14235,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=41.9999999999999
-															FcUVMid(35.4726307865457, 1.39372345944694, 2)
+															FcUVMid(35.4726307865457, 1.39372345944694, 2.5)
 															$begin 'FcTolVts'
-																TolVt(45.9645356670733, 1.80595152491716, 3, 0)
-																TolVt(24.9807259060181, 0.981495393976715, 3, 0)
-																TolVt(24.9807259060181, 0.981495393976715, 1, 0)
-																TolVt(45.9645356670733, 1.80595152491716, 1, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14150,12 +14252,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=15.707963267949
-															FcUVMid(24.5196320100808, 4.87725805040321, 2)
+															FcUVMid(24.5196320100808, 4.87725805040321, 2.5)
 															$begin 'FcTolVts'
-																TolVt(24.9807259060181, 0.981495393976715, 3, 0)
-																TolVt(23.4547833980621, 8.65292642693732, 3, 0)
-																TolVt(23.4547833980621, 8.65292642693732, 1, 0)
-																TolVt(24.9807259060181, 0.981495393976715, 1, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14167,12 +14269,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=234.205732325119
-															FcUVMid(34.948127848793, 6.95161484589038, 3)
+															FcUVMid(34.948127848793, 6.95161484589038, 3.5)
 															$begin 'FcTolVts'
-																TolVt(43.1568014524343, 15.9213846255647, 3, 0)
-																TolVt(23.4547833980621, 8.65292642693732, 3, 0)
-																TolVt(24.9807259060181, 0.981495393976715, 3, 0)
-																TolVt(45.9645356670733, 1.80595152491716, 3, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14184,12 +14286,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=234.205732325119
-															FcUVMid(34.948127848793, 6.95161484589038, 1)
+															FcUVMid(34.948127848793, 6.95161484589038, 1.5)
 															$begin 'FcTolVts'
-																TolVt(24.9807259060181, 0.981495393976715, 1, 0)
-																TolVt(23.4547833980621, 8.65292642693732, 1, 0)
-																TolVt(43.1568014524343, 15.9213846255647, 1, 0)
-																TolVt(45.9645356670733, 1.80595152491716, 1, 0)
+																TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
+																TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
+																TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
+																TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -14201,162 +14303,162 @@ $begin 'AnsoftProject'
 													ID=61581
 													EdgeFaces(61575, 61579)
 													$begin 'EdTolVts'
-														TolVt(23.4547833980621, 8.65292642693732, 3, 0)
-														TolVt(43.1568014524343, 15.9213846255647, 3, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(33.3057924252482, 12.287155526251, 3)
+													EdgeMidPoint(33.3057924252482, 12.287155526251, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=61582
 													EdgeFaces(61575, 61576)
 													$begin 'EdTolVts'
-														TolVt(43.1568014524343, 15.9213846255647, 1, 0)
-														TolVt(43.1568014524343, 15.9213846255647, 3, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(43.1568014524343, 15.9213846255647, 2)
+													EdgeMidPoint(43.1568014524343, 15.9213846255647, 2.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=2
 													ID=61583
 													EdgeFaces(61575, 61580)
 													$begin 'EdTolVts'
-														TolVt(43.1568014524343, 15.9213846255647, 1, 0)
-														TolVt(23.4547833980621, 8.65292642693732, 1, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(33.3057924252482, 12.287155526251, 1)
+													EdgeMidPoint(33.3057924252482, 12.287155526251, 1.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=61584
 													EdgeFaces(61575, 61578)
 													$begin 'EdTolVts'
-														TolVt(23.4547833980621, 8.65292642693732, 1, 0)
-														TolVt(23.4547833980621, 8.65292642693732, 3, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(23.4547833980621, 8.65292642693732, 2)
+													EdgeMidPoint(23.4547833980621, 8.65292642693732, 2.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=4
 													ID=61585
 													EdgeFaces(61576, 61579)
 													$begin 'EdTolVts'
-														TolVt(43.1568014524343, 15.9213846255647, 3, 0)
-														TolVt(45.9645356670733, 1.80595152491716, 3, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 3.5, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(45.1161228985486, 8.9741548127419, 3)
+													EdgeMidPoint(45.1161228985486, 8.9741548127419, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=5
 													ID=61586
 													EdgeFaces(61576, 61577)
 													$begin 'EdTolVts'
-														TolVt(45.9645356670733, 1.80595152491716, 1, 0)
-														TolVt(45.9645356670733, 1.80595152491716, 3, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(45.9645356670733, 1.80595152491716, 2)
+													EdgeMidPoint(45.9645356670733, 1.80595152491716, 2.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=6
 													ID=61587
 													EdgeFaces(61576, 61580)
 													$begin 'EdTolVts'
-														TolVt(45.9645356670733, 1.80595152491716, 1, 0)
-														TolVt(43.1568014524343, 15.9213846255647, 1, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
+														TolVt(43.1568014524343, 15.9213846255647, 1.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(45.1161228985486, 8.9741548127419, 1)
+													EdgeMidPoint(45.1161228985486, 8.9741548127419, 1.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=7
 													ID=61588
 													EdgeFaces(61577, 61579)
 													$begin 'EdTolVts'
-														TolVt(45.9645356670733, 1.80595152491716, 3, 0)
-														TolVt(24.9807259060181, 0.981495393976715, 3, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 3.5, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.4726307865457, 1.39372345944693, 3)
+													EdgeMidPoint(35.4726307865457, 1.39372345944693, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=8
 													ID=61589
 													EdgeFaces(61577, 61578)
 													$begin 'EdTolVts'
-														TolVt(24.9807259060181, 0.981495393976715, 1, 0)
-														TolVt(24.9807259060181, 0.981495393976715, 3, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(24.9807259060181, 0.981495393976715, 2)
+													EdgeMidPoint(24.9807259060181, 0.981495393976715, 2.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=9
 													ID=61590
 													EdgeFaces(61577, 61580)
 													$begin 'EdTolVts'
-														TolVt(24.9807259060181, 0.981495393976715, 1, 0)
-														TolVt(45.9645356670733, 1.80595152491716, 1, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
+														TolVt(45.9645356670733, 1.80595152491716, 1.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(35.4726307865457, 1.39372345944693, 1)
+													EdgeMidPoint(35.4726307865457, 1.39372345944693, 1.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=10
 													ID=61591
 													EdgeFaces(61578, 61579)
 													$begin 'EdTolVts'
-														TolVt(24.9807259060181, 0.981495393976715, 3, 0)
-														TolVt(23.4547833980621, 8.65292642693732, 3, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 3.5, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 3.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(24.5196320100808, 4.87725805040321, 3)
+													EdgeMidPoint(24.5196320100808, 4.87725805040321, 3.5)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=11
 													ID=61592
 													EdgeFaces(61578, 61580)
 													$begin 'EdTolVts'
-														TolVt(23.4547833980621, 8.65292642693732, 1, 0)
-														TolVt(24.9807259060181, 0.981495393976715, 1, 0)
+														TolVt(23.4547833980621, 8.65292642693732, 1.5, 0)
+														TolVt(24.9807259060181, 0.981495393976715, 1.5, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(24.5196320100808, 4.87725805040321, 1)
+													EdgeMidPoint(24.5196320100808, 4.87725805040321, 1.5)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=61593
-													VtPos(23.4547833980621, 8.65292642693732, 3)
+													VtPos(23.4547833980621, 8.65292642693732, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=61594
-													VtPos(43.1568014524343, 15.9213846255647, 3)
+													VtPos(43.1568014524343, 15.9213846255647, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=61595
-													VtPos(43.1568014524343, 15.9213846255647, 1)
+													VtPos(43.1568014524343, 15.9213846255647, 1.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=61596
-													VtPos(23.4547833980621, 8.65292642693732, 1)
+													VtPos(23.4547833980621, 8.65292642693732, 1.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=4
 													ID=61597
-													VtPos(45.9645356670733, 1.80595152491716, 3)
+													VtPos(45.9645356670733, 1.80595152491716, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=5
 													ID=61598
-													VtPos(45.9645356670733, 1.80595152491716, 1)
+													VtPos(45.9645356670733, 1.80595152491716, 1.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=6
 													ID=61599
-													VtPos(24.9807259060181, 0.981495393976715, 3)
+													VtPos(24.9807259060181, 0.981495393976715, 3.5)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=7
 													ID=61600
-													VtPos(24.9807259060181, 0.981495393976715, 1)
+													VtPos(24.9807259060181, 0.981495393976715, 1.5)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -39687,7 +39789,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_1'
 				$begin 'c_2'
 					ID=644
@@ -39697,7 +39799,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_2'
 				$begin 'c_3'
 					ID=645
@@ -39707,7 +39809,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_3'
 				$begin 'c_4'
 					ID=646
@@ -39717,7 +39819,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_4'
 				$begin 'c_5'
 					ID=647
@@ -39727,7 +39829,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_5'
 				$begin 'c_6'
 					ID=648
@@ -39737,7 +39839,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_6'
 				$begin 'c_7'
 					ID=649
@@ -39747,7 +39849,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_7'
 				$begin 'c_8'
 					ID=650
@@ -39757,7 +39859,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_8'
 				$begin 'c_9'
 					ID=651
@@ -39767,7 +39869,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_9'
 				$begin 'c_10'
 					ID=652
@@ -39777,7 +39879,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_10'
 				$begin 'c_11'
 					ID=653
@@ -39787,7 +39889,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_11'
 				$begin 'c_12'
 					ID=654
@@ -39797,7 +39899,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_12'
 				$begin 'c_13'
 					ID=655
@@ -39807,7 +39909,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_13'
 				$begin 'c_14'
 					ID=656
@@ -39817,7 +39919,7 @@ $begin 'AnsoftProject'
 					ParentBndID=4
 					'Conductor number'='1'
 					Winding=4
-					'Point out of terminal'=false
+					'Point out of terminal'=true
 				$end 'c_14'
 				$begin 'b_1'
 					ID=657
@@ -40027,7 +40129,7 @@ $begin 'AnsoftProject'
 				UseFlexMeshingForTAUvolumeMesh=false
 			$end 'MeshSettings'
 			$begin 'MeshOperations'
-				NextUniqueID=18
+				NextUniqueID=19
 				MoveBackwards=false
 				$begin 'core'
 					RefineInside=true
@@ -40061,7 +40163,7 @@ $begin 'AnsoftProject'
 					RestrictElem=false
 					NumMaxElem='1000'
 					RestrictLength=true
-					MaxLength='2mm'
+					MaxLength='1mm'
 				$end 'magnets'
 				$begin 'mesh_sheet'
 					RefineInside=false
@@ -40087,6 +40189,18 @@ $begin 'AnsoftProject'
 					RestrictLength=true
 					MaxLength='1mm'
 				$end 'band'
+				$begin 'turns'
+					RefineInside=true
+					ID=18
+					Type='LengthBased'
+					IsComponent=false
+					Enabled=true
+					Objects(105340, 105559, 106033, 105612, 106085, 105877, 105413, 105665, 106137, 105718, 106189, 105929, 105486, 105771, 106241, 105824, 106293, 105981, 106345, 106418, 106576, 106471, 106524, 106628, 106680, 106753, 106911, 106806, 106963, 106859, 107377, 107450, 107608, 107503, 107556, 107660, 107794, 107867, 107973, 107920, 108078, 108025)
+					RestrictElem=false
+					NumMaxElem='1000'
+					RestrictLength=true
+					MaxLength='0.3mm'
+				$end 'turns'
 			$end 'MeshOperations'
 		$end 'MeshSetup'
 		$begin 'AnalysisSetup'
@@ -40151,10 +40265,10 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=22
 				Default_PlotFolder='Automatic'
-				Default_Time=''
+				Default_Time='1000000ns'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
-				NextUniqueID=73
+				NextUniqueID=82
 				MoveBackwards=false
 				NumQuantityType=1
 				$begin 'QuantityFolder_1'
@@ -40171,16 +40285,16 @@ $begin 'AnsoftProject'
 					$begin 'Scale3DSettings'
 						unit=103
 						m_nLevels=15
-						minvalue=0.0222889526717267
-						maxvalue=1.55630985165445
+						minvalue=0.0220436288210359
+						maxvalue=1.55681505077191
 						log=false
-						IntrinsicMin=0.0222889526717267
-						IntrinsicMax=1.55630985165445
+						IntrinsicMin=0.0220436288210359
+						IntrinsicMax=1.55681505077191
 						LimitFieldValuePrecision=false
 						FieldValuePrecisionDigits=4
 						dB=false
 						ScaleType=0
-						UserSpecifyValues(16, 0.0222889520227909, 0.124557018280029, 0.226825073361397, 0.329093128442764, 0.431361198425293, 0.533629298210144, 0.63589733839035, 0.738165438175201, 0.840433478355408, 0.942701518535614, 1.04496955871582, 1.14723765850067, 1.24950563907623, 1.35177373886108, 1.45404183864594, 1.5563098192215)
+						UserSpecifyValues(16, 0.0220436286181211, 0.124361723661423, 0.226679816842079, 0.328997880220413, 0.431315988302231, 0.533634126186371, 0.635952174663544, 0.738270282745361, 0.840588390827179, 0.942906498908997, 1.04522454738617, 1.14754259586334, 1.24986064434052, 1.35217881202698, 1.45449686050415, 1.55681502819061)
 						ValueNumberFormatTypeAuto=0
 						ValueNumberFormatTypeScientific=false
 						ValueNumberFormatWidth=6
@@ -40198,12 +40312,12 @@ $begin 'AnsoftProject'
 						ArrowMapColor=true
 						ShowArrowTail=true
 						ArrowSize=0.25
-						ArrowMinMagnitude=-0.477711047328273
-						ArrowMaxMagnitude=2.05630985165445
+						ArrowMinMagnitude=-0.477956371178964
+						ArrowMaxMagnitude=2.05681505077191
 						ArrowMagnitudeThreshold=0
 						ArrowMagnitudeFilteringFlag=false
-						ArrowMinIntrinsicMagnitude=-0.477711047328273
-						ArrowMaxIntrinsicMagnitude=2.05630985165445
+						ArrowMinIntrinsicMagnitude=-0.477956371178964
+						ArrowMaxIntrinsicMagnitude=2.05681505077191
 					$end 'Arrow3DSettings'
 					$begin 'DeformScaleSettings'
 						ShowDeformation=true
@@ -40217,8 +40331,8 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_1'
 					PlotDefinitionType='Mesh_field_type'
 					PlotName='Mag_B1'
-					PlotDefinitionId=72
-					VersionID=138
+					PlotDefinitionId=81
+					VersionID=2
 					SolutionId=22
 					UserSpecifyName=0
 					UserSpecifyFolder=0
@@ -40272,18 +40386,18 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('Mag_B', 1, 103, false, SimValueID=7208, 3, 0, 2, 0, false, false, 141, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InducedVoltage(PhaseA)', 1, 67, false, SimValueID=7209, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InputVoltage(PhaseA)', 1, 67, false, SimValueID=7210, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Current(PhaseA)', 1, 76, false, SimValueID=7211, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Moving1.Torque', 1, 125, false, SimValueID=7212, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Current(PhaseA)', 1, 76, false, SimValueID=7213, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Current(PhaseC)', 1, 76, false, SimValueID=7214, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Current(PhaseB)', 1, 76, false, SimValueID=7215, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InducedVoltage(PhaseA)', 1, 67, false, SimValueID=7216, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InducedVoltage(PhaseC)', 1, 67, false, SimValueID=7217, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('InducedVoltage(PhaseB)', 1, 67, false, SimValueID=7218, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('SolidLoss', 1, 58, false, SimValueID=7219, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InducedVoltage(PhaseA)', 1, 67, false, SimValueID=7316, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Current(PhaseA)', 1, 76, false, SimValueID=7317, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Moving1.Torque', 1, 125, false, SimValueID=7318, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Current(PhaseC)', 1, 76, false, SimValueID=7319, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Current(PhaseB)', 1, 76, false, SimValueID=7320, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InducedVoltage(PhaseC)', 1, 67, false, SimValueID=7321, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InducedVoltage(PhaseB)', 1, 67, false, SimValueID=7322, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('SolidLoss', 1, 58, false, SimValueID=7323, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InducedVoltage(PhaseA)', 1, 67, false, SimValueID=7324, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Current(PhaseA)', 1, 76, false, SimValueID=7325, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('InputVoltage(PhaseA)', 1, 67, false, SimValueID=7328, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_B', 1, 103, false, SimValueID=7341, 3, 0, 2, 0, false, false, 141, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -40323,7 +40437,7 @@ $begin 'AnsoftProject'
 							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='Time'
-								Column=''
+								Column='1000000ns'
 								Units='ns'
 							$end 'Sweep'
 							$begin 'PostprocessSweep'
@@ -40387,7 +40501,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='g_cl'
-								Column='0.5mm'
+								Column='0.5mm;1mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -40499,7 +40613,7 @@ $begin 'AnsoftProject'
 				$begin 'Setup'
 					N='Setup1'
 					V=7043
-					Soln(N='Transient', V=7175)
+					Soln(N='Transient', V=7280)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -40563,7 +40677,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=5
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 156, 156, 1397, 691), OrientationMatrix(0.0346520356833935, -0.0092923566699028, -0.00267352280206978, 0, 0.00190451368689537, 0.0163121521472931, -0.0320083759725094, 0, 0.00947988126426935, 0.0306893568485975, 0.0162038281559944, 0, -0.872811079025269, -0.253811150789261, -4.20660018920898, 1, 0, -1.6393883228302, 2.12882041931152, -0.891671538352966, 1.08284723758698, -0.931629657745361, 11.2176532745361), Drawings[99: 'Rotor_Core', 'Mag_N', 'Mag_N_1', 'Mag_N_2', 'Mag_N_3', 'Mag_N_4', 'Mag_N_2_1', 'Rotor_Core_1', 'Mag_N_1_1', 'Mag_N_3_1', 'turn1', 'turn2', 'turn3', 'turn1_1', 'turn1_2', 'turn2_1', 'turn2_2', 'turn3_1', 'turn3_2', 'turn1_7', 'turn2_7', 'turn3_7', 'turn1_1_3', 'turn1_2_3', 'turn2_1_3', 'turn2_2_3', 'turn3_1_3', 'turn3_2_3', 'turn7', 'turn7_1', 'turn7_2', 'turn7_2_1', 'turn7_1_1', 'turn7_3', 'turn8', 'turn8_1', 'turn8_2', 'turn8_3', 'turn8_1_1', 'turn8_2_1', 'Coil4', 'Coil4_Separate1', 'Coil4_Separate2', 'Coil4_Separate3', 'Coil4_Separate4', 'Coil4_Separate4_1', 'Coil4_Separate4_2', 'Coil4_Separate3_1', 'Coil4_Separate3_2', 'Coil4_Separate2_1', 'Coil4_Separate2_2', 'Coil4_Separate1_1', 'Coil4_Separate1_2', 'Coil4_1', 'Coil4_2', 'Coil4_3', 'Coil4_1_1', 'Coil4_2_1', 'Coil4_Separate1_3', 'Coil4_Separate1_1_1', 'Coil4_Separate1_2_1', 'Coil4_Separate2_3', 'Coil4_Separate2_1_1', 'Coil4_Separate2_2_1', 'Coil4_Separate3_3', 'Coil4_Separate3_1_1', 'Coil4_Separate3_2_1', 'Coil4_Separate4_3', 'Coil4_Separate4_1_1', 'Coil4_Separate4_2_1', 'turn9', 'turn9_1', 'turn9_2', 'turn9_2_1', 'turn9_1_1', 'turn9_3', 'Coil6', 'Coil6_1', 'Coil6_2', 'Coil6_Separate1', 'Coil6_1_Separate1', 'Coil6_2_Separate1', 'turn10', 'turn10_1', 'turn10_2', 'turn10_1_1', 'turn10_3', 'turn10_2_1', '7th_coil', '7th_coil_1', '7th_coil_2', '7th_coil_Separate1', '7th_coil_1_Separate1', '7th_coil_2_Separate1', 'core', 'CylindricalGap_band', 'magnets', 'mesh_sheet', 'band'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=0, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=2, dYForGrid=2, dZForGrid=2, dRForGrid=2, dThetaForGrid=10), 'View Solution Context'('Solution ID'=22, 'View IntrinsicVar'='Time=\'-1s\''), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 26, 26, 1319, 499), OrientationMatrix(-0.0250044334679842, -6.08399441937024e-10, -1.84554191373643e-10, 0, 1.86264537127556e-09, -0.00834651850163937, 0.0235702600330114, 0, -2.3283064365387e-10, 0.023570267483592, 0.00834651663899422, 0, 0.0261935591697693, -0.304957836866379, -5.90433788299561, 1, 0, -1.29645156860352, 0.61580628156662, -1.09864020347595, -0.0966292917728424, 1.12018394470215, 9.5948429107666), Drawings[100: 'Rotor_Core', 'Mag_N', 'Mag_N_1', 'Mag_N_2', 'Mag_N_3', 'Mag_N_4', 'Mag_N_2_1', 'Rotor_Core_1', 'Mag_N_1_1', 'Mag_N_3_1', 'turn1', 'turn2', 'turn3', 'turn1_1', 'turn1_2', 'turn2_1', 'turn2_2', 'turn3_1', 'turn3_2', 'turn1_7', 'turn2_7', 'turn3_7', 'turn1_1_3', 'turn1_2_3', 'turn2_1_3', 'turn2_2_3', 'turn3_1_3', 'turn3_2_3', 'turn7', 'turn7_1', 'turn7_2', 'turn7_2_1', 'turn7_1_1', 'turn7_3', 'turn8', 'turn8_1', 'turn8_2', 'turn8_3', 'turn8_1_1', 'turn8_2_1', 'Coil4', 'Coil4_Separate1', 'Coil4_Separate2', 'Coil4_Separate3', 'Coil4_Separate4', 'Coil4_Separate4_1', 'Coil4_Separate4_2', 'Coil4_Separate3_1', 'Coil4_Separate3_2', 'Coil4_Separate2_1', 'Coil4_Separate2_2', 'Coil4_Separate1_1', 'Coil4_Separate1_2', 'Coil4_1', 'Coil4_2', 'Coil4_3', 'Coil4_1_1', 'Coil4_2_1', 'Coil4_Separate1_3', 'Coil4_Separate1_1_1', 'Coil4_Separate1_2_1', 'Coil4_Separate2_3', 'Coil4_Separate2_1_1', 'Coil4_Separate2_2_1', 'Coil4_Separate3_3', 'Coil4_Separate3_1_1', 'Coil4_Separate3_2_1', 'Coil4_Separate4_3', 'Coil4_Separate4_1_1', 'Coil4_Separate4_2_1', 'turn9', 'turn9_1', 'turn9_2', 'turn9_2_1', 'turn9_1_1', 'turn9_3', 'Coil6', 'Coil6_1', 'Coil6_2', 'Coil6_Separate1', 'Coil6_1_Separate1', 'Coil6_2_Separate1', 'turn10', 'turn10_1', 'turn10_2', 'turn10_1_1', 'turn10_3', 'turn10_2_1', '7th_coil', '7th_coil_1', '7th_coil_2', '7th_coil_Separate1', '7th_coil_1_Separate1', '7th_coil_2_Separate1', 'core', 'CylindricalGap_band', 'magnets', 'mesh_sheet', 'band', 'turns'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=0, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=2, dYForGrid=2, dZForGrid=2, dRForGrid=2, dThetaForGrid=10), 'View Solution Context'('Solution ID'=22, 'View IntrinsicVar'='Time=\'-1s\''), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -40585,7 +40699,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=142
-									VersionID=3285
+									VersionID=3296
 									Name='InducedVoltage(PhaseA)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -40735,7 +40849,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=166
-									VersionID=3286
+									VersionID=3297
 									Name='InputVoltage(PhaseA)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -40885,7 +40999,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=167
-									VersionID=3287
+									VersionID=3298
 									Name='Current(PhaseA)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41039,7 +41153,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=152
-									VersionID=3288
+									VersionID=3299
 									Name='Moving1.Torque'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41193,7 +41307,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=162
-									VersionID=3289
+									VersionID=3300
 									Name='Current(PhaseA)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41343,7 +41457,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=163
-									VersionID=3290
+									VersionID=3301
 									Name='Current(PhaseC)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41493,7 +41607,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=164
-									VersionID=3291
+									VersionID=3302
 									Name='Current(PhaseB)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41647,7 +41761,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=196
-									VersionID=3292
+									VersionID=3303
 									Name='InducedVoltage(PhaseA)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41797,7 +41911,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=197
-									VersionID=3293
+									VersionID=3304
 									Name='InducedVoltage(PhaseC)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -41947,7 +42061,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=198
-									VersionID=3294
+									VersionID=3305
 									Name='InducedVoltage(PhaseB)'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -42101,7 +42215,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=201
-									VersionID=3295
+									VersionID=3306
 									Name='SolidLoss'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -42271,7 +42385,7 @@ $begin 'AnsoftProject'
 						NextUniqueID=203
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=3296
+							NextUniqueID=3307
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
@@ -42303,7 +42417,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=94
+									NextUniqueID=112
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -43621,10 +43735,10 @@ $begin 'AnsoftProject'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=670
-																Left=814
-																Bottom=9386
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9424
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -43632,10 +43746,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=670
-																Left=814
-																Bottom=9386
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9424
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -43646,7 +43760,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=566
+																Right=586
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -43657,15 +43771,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8810
+																Left=8763
 																Bottom=9925
 																Right=9925
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=670
-																Left=814
-																Bottom=9386
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9424
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -43676,15 +43790,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=814
-																Bottom=670
-																Right=8810
+																Left=843
+																Bottom=607
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=670
-																Left=814
-																Bottom=9386
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9424
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=true
@@ -43694,16 +43808,16 @@ $begin 'AnsoftProject'
 														DataSourceID=49
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
-																Top=9386
-																Left=814
+																Top=9424
+																Left=843
 																Bottom=9925
-																Right=8810
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=670
-																Left=814
-																Bottom=9386
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9424
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -43714,13 +43828,13 @@ $begin 'AnsoftProject'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=0.001
-															X_fwd=4
+															X_spc=0.00025
+															X_fwd=3
 															X_fpr=2
-															Y1_spc=2.5
-															Y1_fwd=4
+															Y1_spc=1.25
+															Y1_fwd=3
 															Y1_fpr=2
-															Y2_spc=1
+															Y2_spc=0.5
 															Y2_fwd=3
 															Y2_fpr=2
 														$end 'CartesianCurveGroupLayoutAttribute'
@@ -43832,7 +43946,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=87
+									NextUniqueID=123
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -45247,17 +45361,17 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=-1
+											ItemID=122
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -45265,10 +45379,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -45279,7 +45393,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=566
+																Right=586
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -45290,15 +45404,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8810
+																Left=8763
 																Bottom=9925
 																Right=9925
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -45309,15 +45423,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=814
-																Bottom=694
-																Right=8810
+																Left=843
+																Bottom=686
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=true
@@ -45328,8 +45442,8 @@ $begin 'AnsoftProject'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=0.001
-															X_fwd=4
+															X_spc=0.00025
+															X_fwd=3
 															X_fpr=2
 															Y1_spc=0.001
 															Y1_fwd=5
@@ -45451,7 +45565,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=79
+									NextUniqueID=91
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -46751,10 +46865,10 @@ $begin 'AnsoftProject'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=614
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -46762,10 +46876,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=614
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -46776,7 +46890,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=566
+																Right=586
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -46787,15 +46901,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8810
+																Left=8763
 																Bottom=9925
 																Right=9925
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=614
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -46806,15 +46920,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=814
-																Bottom=614
-																Right=8810
+																Left=843
+																Bottom=607
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=614
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -46825,8 +46939,8 @@ $begin 'AnsoftProject'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=0.001
-															X_fwd=4
+															X_spc=0.00025
+															X_fwd=3
 															X_fpr=2
 															Y1_spc=1
 															Y1_fwd=3
@@ -46842,9 +46956,9 @@ $begin 'AnsoftProject'
 																$begin 'OverlayLayoutAttribute'
 																	$begin 'BoundingRect'
 																		Top=4850
-																		Left=666
+																		Left=686
 																		Bottom=9850
-																		Right=8166
+																		Right=8186
 																	$end 'BoundingRect'
 																	ModifySize=false
 																	ModifyPosition=false
@@ -46938,7 +47052,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=81
+									NextUniqueID=93
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -48304,10 +48418,10 @@ $begin 'AnsoftProject'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=670
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -48315,10 +48429,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=670
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -48329,7 +48443,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=566
+																Right=586
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -48340,15 +48454,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8810
+																Left=8763
 																Bottom=9925
 																Right=9925
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=670
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -48359,15 +48473,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=814
-																Bottom=670
-																Right=8810
+																Left=843
+																Bottom=607
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=670
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=607
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=true
@@ -48378,11 +48492,11 @@ $begin 'AnsoftProject'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=0.001
-															X_fwd=4
+															X_spc=0.00025
+															X_fwd=3
 															X_fpr=2
-															Y1_spc=2.5
-															Y1_fwd=4
+															Y1_spc=2
+															Y1_fwd=3
 															Y1_fpr=2
 														$end 'CartesianCurveGroupLayoutAttribute'
 													$end 'SubMapItem'
@@ -48493,7 +48607,7 @@ $begin 'AnsoftProject'
 									$end 'Graph2D'
 								$end 'Graph2DsV2'
 								$begin 'PlotDisplayDataManager'
-									NextUniqueID=53
+									NextUniqueID=65
 									MoveBackwards=false
 									$begin 'PlotHeaderDataSource'
 										CompanyName=''
@@ -49749,10 +49863,10 @@ $begin 'AnsoftProject'
 														DataSourceID=4
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -49760,10 +49874,10 @@ $begin 'AnsoftProject'
 														DataSourceID=28
 														$begin 'BasicLayoutAttribute'
 															$begin 'LayoutRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -49774,7 +49888,7 @@ $begin 'AnsoftProject'
 																Top=75
 																Left=75
 																Bottom=9925
-																Right=566
+																Right=586
 															$end 'LayoutRect'
 														$end 'BasicLayoutAttribute'
 													$end 'SubMapItem'
@@ -49785,15 +49899,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=8810
+																Left=8763
 																Bottom=9925
 																Right=9925
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=false
@@ -49804,15 +49918,15 @@ $begin 'AnsoftProject'
 														$begin 'CartesianAxisLayoutAttribute'
 															$begin 'AxisRect'
 																Top=75
-																Left=814
-																Bottom=694
-																Right=8810
+																Left=843
+																Bottom=686
+																Right=8763
 															$end 'AxisRect'
 															$begin 'GridRect'
-																Top=694
-																Left=814
-																Bottom=9798
-																Right=8810
+																Top=686
+																Left=843
+																Bottom=9823
+																Right=8763
 															$end 'GridRect'
 															AxisCollapsed=false
 															AxisExpandCollapseByUser=true
@@ -49823,10 +49937,10 @@ $begin 'AnsoftProject'
 													$begin 'SubMapItem'
 														DataSourceID=4
 														$begin 'CartesianCurveGroupLayoutAttribute'
-															X_spc=0.001
-															X_fwd=4
+															X_spc=0.00025
+															X_fwd=3
 															X_fpr=2
-															Y1_spc=0.1
+															Y1_spc=0.05
 															Y1_fwd=5
 															Y1_fpr=2
 														$end 'CartesianCurveGroupLayoutAttribute'
@@ -49932,6 +50046,26 @@ $begin 'AnsoftProject'
 							ReportID=153
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
+									$begin 'ViewInfo'
+										$begin 'WrapperView'
+											ID(122)
+										$end 'WrapperView'
+										$begin 'WrapperDoc'
+											HiddenDrawings()
+											$begin 'DispType'
+												PlotType=1
+												$begin 'CurveMed'
+													$begin 'MedCamera'
+														$begin 'svrc'
+															svid=4
+															view(122, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
+														$end 'svrc'
+													$end 'MedCamera'
+												$end 'CurveMed'
+											$end 'DispType'
+										$end 'WrapperDoc'
+										WindowPos(WindowPos(5, -1, -1, -8, -31, 26, 26, 1319, 499))
+									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'tork'
@@ -49973,7 +50107,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=2
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View(WindowPos(5, -1, -1, -8, -31, 0, 0, 1338, 531), OrientationMatrix(-0.0150897363200784, -0.0171529427170753, 0.0277913175523281, 0, 0.0315696038305759, -0.0155007420107722, 0.00757417734712362, 0, 0.00836294703185558, 0.0275642983615398, 0.0215536132454872, 0, -0.443441361188889, 0.880305826663971, -6.94700002670288, 1, 0, -2.28073763847351, 2.28073763847351, -1, 1, -1.02551603317261, 13.0097808837891), Drawings[17: 'Rotor_Core', 'Mag_N', 'Mag_N_1', 'Mag_N_2', 'Mag_N_3', 'Mag_N_4', 'Mag_N_2_1', 'Rotor_Core_1', 'Mag_N_1_1', 'Mag_N_3_1', 'Rectangle1', 'Polyline1', 'core', 'CylindricalGap_band', 'magnets', 'mesh_sheet', 'band'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=0, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=2, dYForGrid=2, dZForGrid=2, dRForGrid=2, dThetaForGrid=10), 'View Solution Context'('Solution ID'=22, 'View IntrinsicVar'='Time=\'-1s\''), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d())
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -59418,8 +59552,8 @@ NumFiles= 6
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0082947.sab
 BIN000000083600
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿç?    €G@    €G@     è?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿç?    €G@    €G@     è?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -59791,8 +59925,8 @@ G=«©Õ@òİÄÅ8@      è?Hòx²d]@ÿó-4·Á8@      è?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -59805,8 +59939,8 @@ $end 'sab'
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0085432.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿã?    €G@    €G@     ä?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿã?    €G@    €G@     ä?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -60180,8 +60314,8 @@ G=«©Õ@òİÄÅ8@      ä?Hòx²d]@ÿó-4·Á8@      ä?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -60194,8 +60328,8 @@ $end 'sab'
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0085840.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿë?    €G@    €G@     ì?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_2	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿë?    €G@    €G@     ì?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -60569,8 +60703,8 @@ G=«©Õ@òİÄÅ8@      ì?Hòx²d]@ÿó-4·Á8@      ì?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -60583,8 +60717,8 @@ $end 'sab'
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0086248.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     è¿    €G@    €G@ÿÿÿÿÿÿç¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_3	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     è¿    €G@    €G@ÿÿÿÿÿÿç¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -60959,8 +61093,8 @@ Q %   á   ÿÿÿÿÿÿÿÿÿÿÿÿâ   ã      ÿÿÿÿä   
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -60973,8 +61107,8 @@ $end 'sab'
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0086656.sab
 BIN000000083608
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     ì¿    €G@    €G@ÿÿÿÿÿÿë¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top_1_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     ì¿    €G@    €G@ÿÿÿÿÿÿë¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -61343,8 +61477,8 @@ G=«©Õ@òİÄÅ8@      ì¿Hòx²d]@ÿó-4·Á8@      ì¿%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -61357,8 +61491,8 @@ $end 'sab'
 $begin 'sab'
 Design_1.setup/NativeGeometryFiles/0087064.sab
 BIN000000083608
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     ä¿    €G@    €G@ÿÿÿÿÿÿã¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top_2_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     ä¿    €G@    €G@ÿÿÿÿÿÿã¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -61727,8 +61861,8 @@ G=«©Õ@òİÄÅ8@      ä¿Hòx²d]@ÿó-4·Á8@      ä¿%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -61744,8 +61878,8 @@ NumFiles= 6
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0082947.sab
 BIN000000083600
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿç?    €G@    €G@     è?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿç?    €G@    €G@     è?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -62117,8 +62251,8 @@ G=«©Õ@òİÄÅ8@      è?Hòx²d]@ÿó-4·Á8@      è?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -62131,8 +62265,8 @@ $end 'sab'
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0085432.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿã?    €G@    €G@     ä?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿã?    €G@    €G@     ä?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -62506,8 +62640,8 @@ G=«©Õ@òİÄÅ8@      ä?Hòx²d]@ÿó-4·Á8@      ä?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -62520,8 +62654,8 @@ $end 'sab'
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0085840.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼ÿÿÿÿÿÿë?    €G@    €G@     ì?string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_2	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼ÿÿÿÿÿÿë?    €G@    €G@     ì?transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -62895,8 +63029,8 @@ G=«©Õ@òİÄÅ8@      ì?Hòx²d]@ÿó-4·Á8@      ì?%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -62909,8 +63043,8 @@ $end 'sab'
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0086248.sab
 BIN000000083604
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     è¿    €G@    €G@ÿÿÿÿÿÿç¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6
 band_top_3	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     è¿    €G@    €G@ÿÿÿÿÿÿç¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
@@ -63285,8 +63419,8 @@ Q %   á   ÿÿÿÿÿÿÿÿÿÿÿÿâ   ã      ÿÿÿÿä   
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -63299,8 +63433,8 @@ $end 'sab'
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0086656.sab
 BIN000000083608
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     ì¿    €G@    €G@ÿÿÿÿÿÿë¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top_1_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     ì¿    €G@    €G@ÿÿÿÿÿÿë¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -63669,8 +63803,8 @@ G=«©Õ@òİÄÅ8@      ì¿Hòx²d]@ÿó-4·Á8@      ì¿%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -63683,8 +63817,8 @@ $end 'sab'
 $begin 'sab'
 Design_4.setup/NativeGeometryFiles/0087064.sab
 BIN000000083608
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MPQ3VMMTSYNP7QRNK9DGGBVSWN2JC6B5PSBF4Q8QEUBJVF47BUBDCGAP5YA4MQ8QDUBM3P4QUTCFCN	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M54YMRY2WEK76TWEP9FX3KGGED5Q3YPQHDCUMEGQ4FBSKFAQDQAJCGE6EF8DVKGP4KAQBFANEQBMCR	body%      ÿÿÿÿÿÿÿÿÿÿÿÿ       ÿÿÿÿ   
 !­)‘Á¼    pê¼     ä¿    €G@    €G@ÿÿÿÿÿÿã¿string_attrib%   name_attrib%   gen%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¦îß ATTRIB_XACIS_NAME%6band_top_2_1	lump%   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ       
 !­)‘Á¼    pê¼     ä¿    €G@    €G@ÿÿÿÿÿÿã¿transform%   ÿÿÿÿÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?%   %   %   %   ÿÿÿÿÿÿÿÿ          ¦îß SPAATTRIB_MATERIAL_NAME%9vacuum
 shell%
@@ -64053,8 +64187,8 @@ G=«©Õ@òİÄÅ8@      ä¿Hòx²d]@ÿó-4·Á8@      ä¿%   –   ÿÿÿÿÿÿÿÿÿÿÿÿ’  
 # Ansoft project setting data. Non-Ansoft programs
 # should not read the rest of this file.
 B_SETNGS 1.03
-ACIS BinaryFileT             SpatialACIS 29.0.1 NTWed Feb  5 17:04:51 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
-MUSEZ8T48AGZR2B5P3P5S8UQWN2QV6F6R59P4FJN2YAVMP653Q8JVE2QVECTBQ4QDUBMBQ8Q4BDT3Qtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
+ACIS BinaryFileT             SpatialACIS 29.0.1 NTFri Feb  7 10:29:24 2020      ğ?íµ ÷Æ°>»½×Ùß|Û=
+M8_EWJ6_VXUTRR4V8NUBJA4J5D7TU9FPPDBRUSE7EQCPMP67VTCTKNC73BB34FPPVJAS3GZQ4YCCMFtransform%      ÿÿÿÿ      ğ?                              ğ?                              ğ?                              ğ?
 point%      ÿÿÿÿÿÿÿÿÿÿÿÿ                        	flag%   ansoft%   attrib%   ÿÿÿÿÿÿÿÿ   ÿÿÿÿ    ¥îÛ     
 color%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ   ¥îÛ ÿ ÿ€
 units%   %   %   ÿÿÿÿÿÿÿÿ          ¥îÛ mm     @@%   %   %   ÿÿÿÿÿÿÿÿÿÿÿÿ       ¥îÛ ÀÀÀ€End-of-ACIS-data
@@ -64086,7 +64220,7 @@ Z'
 		DesignName='1 - Concentric Winding'
 		Notes=''
 		Factory='Maxwell 3D'
-		IsSolved=false
+		IsSolved=true
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[0:]
