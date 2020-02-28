@@ -1,10 +1,11 @@
- function obj = obj_double_sided(x)
+%  function obj = obj_double_sided(x)
 
 %% inputs
 global p c results counter layer
+clc;clear all;c=4;m=3; p=16; counter=1; layer=2;x=[49, 7 2 20];
 
 %variables
-rout_pcb = x(1)/1e3;    %m, pcb rin
+rout_pcb = x(1)/1e3;    %m, pcb rot
 np = x(2);      %number of turns in each coil
 k_mag = x(3);   %magnet kac tane üst üste
 i_a = x(4)/10;   %Arms,per phase current at nominal speed
@@ -19,17 +20,17 @@ mag_angle = 144;   %elec_deg,  magnet angle
 ur = 1.05;   %relative permeability of magnet
 br = 1.33;    %T, residual flux density
 m = 3;      %phase number
-n = 1500;       %rpm, nominal speed
+n = 2000;       %rpm, nominal speed
 d_trace = 0.2e-3;    %m, distance between two traces
 % t_el = 0.15;    %Nm, nominal torque
 % bear = 5e-3;   %m, bearing thickness in radial direction
-temp_pcb = 80;   %deg, coils operating temperature
+temp_pcb = 50;   %deg, coils operating temperature
 g_pcb_overall = 1e-3;    %m,overall pcb thickness
 g_cu = cu_thick_oz*0.0347e-3;   %m, copper thickness per layer
 area_cu = w_cu*g_cu;   %m2, copper area
 % w_cu_unrounded = area_cu/g_cu;    %m, copper trace width
 % w_cu = round(w_cu_unrounded,4);     %rounding nearest integer in mm
-g_cl = 0.5e-3;
+g_cl = 1e-3;
 g_magnetic = 2*g_cl+g_pcb_overall;    %m, magnetic air gap
 n_ph = layer*np*c;  %number of turns per phase
 cs_main_el = p*180/m/c;       %electrical deg, coil span
@@ -44,7 +45,7 @@ delta_r = d_trace+w_cu;      %m, bitiþik iki turn arasýnda radial mesafe
 rout_mag = rout_pcb-3*delta_r+w_cu/2;      %m, magnet rout
 rout_mag = round(rout_mag,3);     %rounding nearest integer in mm
 
-rin_mag = rout_mag - 20e-3;          %m, magnet rin
+rin_mag = rout_mag - 21e-3;          %m, magnet rin
 rin_pcb = rin_mag; %m, rin pcb
 
 %% prevent repeatition in optimization
@@ -133,7 +134,7 @@ t_el = (3*sqrt(2)/4 * b_avg* layer*app*i_a*c*p*kd);     %Nm, rated torque
 
 
 % l_core calculation
-b_core = 1;    %T, core desired B
+b_core = 1.3;    %T, core desired B
 rout_core = rout_mag;     %m, core outher radius
 rin_core = rin_mag;        %m, core inner radius
 flux_pp = b_avg*pi*(rout_core^2-rin_core^2)/p;   %wb, flux per pole
@@ -170,13 +171,52 @@ e_a_fund_rms_analytical = pi*sqrt(2)*f*b_avg*app*kd*(c*layer);   %V,rms voltage 
 
 %% b_avg harmonics calculation analytically
 
-h_max = 15;   %max harmonics to be included
+h_max = 21;   %max harmonics to be included
 h = 1:1:h_max;   %harmonics to be encountered
 
-% b_peak_h_analytical = b_square * 4/pi ./h .* sin(mag_angle*h/2*pi/180) .*mod(h,2);    %T, peak of sinusoidal harmonics, even harmonics zero
+% b_peak_h_analytical = b_square * 4/pi ./h .* sin(mag_angle*h/2*pi/180) .*mod(h,2);    %T, peak of sinusoidal harmonics, even harmonics zero, YANLIS
 b_peak_h_analytical = b_square * 4/pi ./h .* cos(pi/2*h-mag_angle*h/2*pi/180) .*mod(h,2);    %T, peak of sinusoidal harmonics, even harmonics zero
 
 b_avg_h = b_peak_h_analytical*2/pi;  %T, avg flux density for harmonics 
+
+% 
+% 
+% %% reconstuction of the b_avg
+% 
+% elec_angle = linspace(0,2*pi,1000);
+% for h=1:2:h_max;
+% b_air(h,:) = b_peak_h_analytical(h) * sin(elec_angle*h); 
+% end
+% 
+% b_airg = sum(b_air);
+% plot(b_airg);
+% %% fft of flux density of maxwell
+% 
+% 
+% filedir = 'D:\GitHub\PCB Motor Furkan\matlab analitik model\airgap.csv';   % file import
+% B_airgap_fem = readtable(filedir);
+% 
+% position = table2array(B_airgap_fem(:,1));  %ms, time data
+% Bgap = table2array(B_airgap_fem(:,2));  %V, induced voltage fem phase
+% Bgap = Bgap (251:751);
+% % pos = linspace(0,1000/f_fund,2048); %ms, time array
+% 
+% % measured phase fft
+% Bgap_fft = resample(Bgap,2048,numel(Bgap)); % adjust array size to 2048 points
+% h_max_fft = 25;   % max number of harmonics to be considered
+% L = 2048;                 % fft calculation
+% NFFT = 2^nextpow2(L);     % fft calculation
+% fft_res_Bgap = fft(Bgap_fft, NFFT)/L; % fft calculation
+% Bgap_maxwell_harm_peak = 2*abs(fft_res_Bgap(2:h_max_fft+1))';   % peak value of each harmonic
+% bar(Bgap_maxwell_harm_peak)   % harmonics are calculated in this step, bar gives peak value of each harmonic
+% 
+% 
+% %% comparison of Bgap of analytical and maxwell in FFT
+% harm_plot = 11;
+% Bgap_fft_comp = [ abs(b_peak_h_analytical(1:harm_plot)'), Bgap_maxwell_harm_peak(1:harm_plot)']; % required for bar plot in series 
+% bar(Bgap_fft_comp);  % this is the harmonics comparison for phase voltages
+% 
+
 
 %% scripting function to get b harmonics
 
@@ -346,4 +386,4 @@ results(counter,:) = [rout_pcb*1e3 np i_a l_mag*1e3 l_core*1e3 res_ph ind_ph eff
 
 counter = counter+1;
 
- end
+% end
