@@ -1,5 +1,5 @@
 %%
-% load('concentric.mat');
+load('concentric.mat');
 %%
 
 % filter_freq= 400000; %Hz
@@ -9,7 +9,7 @@ time_array2 = transpose(0:Tstep:100e-3-Tstep); % 45 ms of data is taken
 
 % Vdc1 - Rectifier - No int
 
-InducedVoltagePhaseA1 = phase_a_1500;
+InducedVoltagePhaseA1 = phase_a_2000;
 InducedVoltagePhaseA = [InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1;InducedVoltagePhaseA1]; % 45 ms of data is taken
 ts_InducedVoltagePhaseA = timeseries(InducedVoltagePhaseA,time_array2);
 
@@ -19,7 +19,7 @@ sim('for_fft.slx');
 
 fft_cycle = 2;
 fft_start = 0;
-fft_fund = 200;
+fft_fund = 266.67;
 fft_maxfreq = 200000;
 fft_THDmaxfreq = 200000;
 % h_level=0.1;
@@ -54,7 +54,7 @@ L1=sprintf('Vfundamental = %.3f V ',max(InducedVoltagePhaseA_FFTDATA.mag));
 % L3=sprintf('Mod 2 - No Interleaving - Idc = %.3f A ',max(i2_ag_noint_FFTDATA.mag));
 % L4=sprintf('Mod 2 - Yes Interleaving - Idc = %.3f A ',max(i2_ag_yesint_FFTDATA.mag));
 legend(L1);
-title('Concentric Winding Induced Voltage FFT Result - 1500 RPM ');
+title('Concentric Winding Induced Voltage FFT Result - 2000 RPM ');
 
 % %% Harmonic Analysis
 % 

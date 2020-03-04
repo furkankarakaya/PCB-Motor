@@ -1,22 +1,9 @@
-load('concentric.mat');
+Tfull1=[26 30 33.4 35.5 38.3 38.3 38.8 39.4 39.3 40.8 40.7 40.6 41.5 41.4 41.6 41.2 41.9 42 42.2 41.5 42.1 42.8 42.3 42.2 42.9 42.2 43.5 43.5 42.9 43.5 43.5 ];
+Thalf=[25.8 29.9 31.9 33.1 33.5 34.3 34 34.8 34.3 34.8 34.7 36 35.2 36.1 35.2 35.7 35.8 35.6 35.7 36.1 35.5 35.5 36.1 36.4 35.5 35.6 36 35.6 35.6 36 35.6];
 
-figure;
-hold all;
-plot(time_1500,phase_a_1500,'Linewidth',1);
-plot(time_1500,phase_b_1500,'Linewidth',1);
-plot(time_1500,phase_c_1500,'Linewidth',1);
-set(gca,'FontSize',14);
-xlabel('Time (ms)','FontSize',14,'FontWeight','Bold')
-ylabel('Voltage (V)','FontSize',14,'FontWeight','Bold')
-%  xlim([79000 81000]);
-%  ylim([0 0.1]);
-grid on
-L7=sprintf('Va = %.3f Vrms ',rms(phase_a_1500));
-L8=sprintf('Vb = %.3f Vrms ',rms(phase_a_1500));
-L9=sprintf('Vc = %.3f Vrms ',rms(phase_a_1500));
-legend(L7,L8,L9);
-title('Concentric Winding Induced Voltage - 1500 RPM ');
-%%
+Tfull=[26 30 33.4 35.5 37 38.5 38.8 39.4 39.8 40.3 40.5 40.8 41.0 41.2 41.5 41.7 41.9 42 42.2 42.5 42.5 42.8 42.8 42.9 42.9 42.9 43.1 43.3 43.3 43.4 43.5 ];
+Thalf=[25.8 29.9 31.9 33.1 33.5 34 34.3 34.5 34.8 34.8 34.9 35 35.2 35.4 35.5 35.7 35.8 35.9 35.9 36.1 36.1 36.2 36.2 36.4 36.4 36.4 36.5 36.5 36.5 36.5 36.5];
+t=0:10:300;
 
 k_scaling = 4;          % scaling factor of the figure
 % (You need to plot a figure which has a width of (8.8 * k_scaling)
@@ -56,8 +43,8 @@ set(0,'defaultLegendFontSize',8*k_scaling);
 set(0,'defaultAxesUnits','normalized');
 set(0,'defaultAxesPosition',[left/width bottom/hight (width-left-right)/width  (hight-bottom-top)/hight]);
 
-set(0,'defaultAxesColorOrder',[0 0 0]);
-set(0,'defaultAxesTickDir','out');
+% set(0,'defaultAxesColorOrder',[0 0 0]);
+% set(0,'defaultAxesTickDir','out');
 
 set(0,'defaultFigurePaperPositionMode','auto');
 
@@ -65,21 +52,26 @@ set(0,'defaultFigurePaperPositionMode','auto');
 set(0,'defaultLegendLocation','southeast');
 set(0,'defaultLegendBox','on');
 set(0,'defaultLegendOrientation','vertical');
-
 figure;
-hold all;
-plot(time_2000,phase_a_2000,'-r','Linewidth',2);
-plot(time_2000,phase_b_2000,'-g','Linewidth',2);
-plot(time_2000,phase_c_2000,'-b','Linewidth',2);
+hold all
+plot(t,Tfull,'-r','Linewidth',2);
+plot(t,Thalf,'--b','Linewidth',2);
 set(gca,'FontSize',40);
-xlabel('Time (ms)','FontSize',40,'FontWeight','Bold')
-ylabel('Voltage (V)','FontSize',40,'FontWeight','Bold')
+xlabel('Time (s)','FontSize',40,'FontWeight','Bold')
+ylabel('Temperature (C)','FontSize',40,'FontWeight','Bold')
 %  xlim([79000 81000]);
 %  ylim([0 0.1]);
 grid on
-L10=sprintf('Va = %.3f Vrms ',rms(phase_a_2000));
-L11=sprintf('Vb = %.3f Vrms ',rms(phase_a_2000));
-L12=sprintf('Vc = %.3f Vrms ',rms(phase_a_2000));
-legend(L10,L11,L12);
-% title('Concentric Winding Induced Voltage - 2000 RPM ');
+L1=sprintf('Full Load');
+L2=sprintf('Half Load');
+legend(L1,L2);
+% title('Concentric Winding Temperature Characteristics ');
 
+%  xlabel('$Time (s)$','fontsize',40,'interpreter','latex')
+%  ylabel('$Temperature (^{\circ}C)$','fontsize',40,'interpreter','latex')
+% % xlabel('Time (s)','FontSize',40,'FontWeight','Bold')
+% % ylabel('Temperature (C)','FontSize',40,'FontWeight','Bold')
+% %  xlim([79000 81000]);
+% %  ylim([0 0.1]);
+% grid on
+% legend('$Full Load$','$Half Load$','interpreter','latex');
