@@ -13,6 +13,9 @@ B7_max=0.0133;
 B9_max=-0.0085;
 N=48;    %Number of series turns
 
+J=2/(0.8*0.07e-06);
+Torque=avg_BI*J*sin((45-11.25)*pi/180)*(288*25.053*0.8*0.07e-09)*(46+25)*0.5e-03;
+
 f=k_w*N*B_max*sin(w*t+pole*teta/2)*r;
 g1=int(f, teta, -1823/(1000*2)+r*5188/(125*2) , 1823/(1000*2)-r*5188/(125*2));
 h1=int(g1, r, 25e-03, 31.215e-03);
@@ -64,7 +67,7 @@ m29=feval(l29,time);
 
 figure;
 hold all
-plot(time-9.25e-04,(m1+m2+m13+m23+m17+m27+m19+m29)*0.85,'LineWidth',2);
+plot(time-9.25e-04,(m1+m2+m13+m23+m17+m27+m19+m29),'LineWidth',2);
 plot(Timems/1000,-InducedVoltagePhaseA,'LineWidth',2);
 xlim([0.00094 0.0075]);
 xlabel('Time (s)');
