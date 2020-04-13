@@ -17,7 +17,7 @@ sim('for_fft.slx');
 
 %% Adjust FFT parameters
 
-fft_cycle = 2;
+fft_cycle = 1;
 fft_start = 0;
 fft_fund = 266.67;
 fft_maxfreq = 200000;
@@ -39,35 +39,19 @@ InducedVoltagePhaseA_FFTDATA = power_fftscope(InducedVoltagePhaseA_FFTDATA);
 
 figure;
 hold all;
-x=[FreqkHz1*1000./266.67 FreqkHz1*1000./266.67];
-y=[InducedVoltagePhaseA_FFTDATA.mag(1:101) magInducedVoltagePhaseA1];
-bar(InducedVoltagePhaseA_FFTDATA.freq,InducedVoltagePhaseA_FFTDATA.mag);
-
+x=[FreqkHz./FreqkHz(2) FreqkHz./FreqkHz(2)];
+y=[InducedVoltagePhaseA_FFTDATA.mag(1:51) magInducedVoltagePhaseA];
+bar(x,y);
+% bar(InducedVoltagePhaseA_FFTDATA.freq(1:51),InducedVoltagePhaseA_FFTDATA.mag(1:51));
 xlabel('Harmonic Order','FontSize',14,'FontWeight','Bold')
 ylabel('Magnitude of Induced Voltage (V)','FontSize',14,'FontWeight','Bold')
 title('Radial Winding Induced Voltage FFT Result - 2000 RPM ');
-L1=sprintf('Test Results: Vfundamental = %.3f V ',max(InducedVoltagePhaseA_FFTDATA.mag(1:101)));
-L2=sprintf('FEA results: Vfundamental = %.3f V ',max(magInducedVoltagePhaseA1));
+L1=sprintf('Test Results: Vfundamental = %.3f V ',max(InducedVoltagePhaseA_FFTDATA.mag(1:51)));
+L2=sprintf('FEA results: Vfundamental = %.3f V ',max(magInducedVoltagePhaseA));
 legend(L1,L2);
 grid on
-xlim([0.8 5]);
-% bar(FreqkHz1,magInducedVoltagePhaseA1)
-% bar(InducedVoltagePhaseA_FFTDATA.freq,InducedVoltagePhaseA_FFTDATA.mag,'r','Linewidth',1);
-% plot(i1_ag_yesint_FFTDATA.freq,i1_ag_yesint_FFTDATA.mag,'r*-','Linewidth',1);
-% plot(i2_ag_noint_FFTDATA.freq,i2_ag_noint_FFTDATA.mag,'go-','Linewidth',1);
-% plot(i2_ag_yesint_FFTDATA.freq,i2_ag_yesint_FFTDATA.mag,'y*-','Linewidth',1);
-set(gca,'FontSize',14);
-xlabel('Frequency (Hertz)','FontSize',14,'FontWeight','Bold')
-ylabel('FFT of Induced Voltage (V)','FontSize',14,'FontWeight','Bold')
-%  xlim([0 1000]);
-% ylim([0 0.1]);
-grid on
-L1=sprintf('Vfundamental = %.3f V ',max(InducedVoltagePhaseA_FFTDATA.mag));
-% L2=sprintf('Mod 1 - Yes Interleaving - Idc = %.3f A ',max(i1_ag_yesint_FFTDATA.mag));
-% L3=sprintf('Mod 2 - No Interleaving - Idc = %.3f A ',max(i2_ag_noint_FFTDATA.mag));
-% L4=sprintf('Mod 2 - Yes Interleaving - Idc = %.3f A ',max(i2_ag_yesint_FFTDATA.mag));
-legend(L1);
-title('Concentric Winding Induced Voltage FFT Result - 2000 RPM ');
+ xlim([0.6 5]);
+title('UEW Parallel Winding Induced Voltage FFT Result - 2000 RPM ');
 
 %%
 % figure;
@@ -78,11 +62,11 @@ title('Concentric Winding Induced Voltage FFT Result - 2000 RPM ');
 % set(gca,'FontSize',14);
 % xlabel('Time (s)','FontSize',14,'FontWeight','Bold')
 % ylabel('Induced Phase Voltages (V)','FontSize',14,'FontWeight','Bold')
-% %  xlim([0 1000]);
-% % ylim([0 0.1]);
+%  xlim([-5e-03 5e-03]);
+%  ylim([-9 9]);
 % grid on
 % legend('Phase A','Phase B','Phase C');
-% title('UEW Parallel Winding Induced Voltage - 2000 RPM ');
+% title('UEW Winding Induced Voltage - 2000 RPM ');
 %%
 % %% Harmonic Analysis
 % 
