@@ -1,16 +1,4 @@
 % function [ BIx_tot, BIy_tot, BIIx_tot, BIIy_tot ] = FieldAnalysis_DSAFPM( hm, L, tau_p, br25, alpha_p, mur, mu0, N, RTC, temp_amb, x, y )
-hm=2e-3;
-L=7e-3;
-tau_p=2*pi*35.5/16000;
-br25=1.33;
-alpha_p=0.8;
-mur=1.05;
-mu0=4*pi*1e-07;
-N=11;
-RTC=-0.11;
-temp_amb=25;
-x=linspace(0,tau_p,1000);
-y=3.5e-3;
 
 % No-load magnetic field analysis of a single side axial flux PM motor
 % Source: "Field Computation for an Axial Flux Permanent-Magnet 
@@ -94,25 +82,4 @@ BIIy_tot = sum(BIIy);
 
 
 % end
-%%
-BIy_neg=-BIy_tot;
-BI=[BIy_tot BIy_neg];
-avg_BI=mean(abs(BI));
-avg_Bz=mean(abs(Bz));
-new_x=tau_p*3/2+linspace(0,2*tau_p,2000);
-figure;
-hold all
-plot(new_x*1000,-BI,'Linewidth',4);
-plot(Distancemm,-Bz,':','Linewidth',4);
-
-set(gca,'FontSize',20);
-xlabel('Circumference (mm)','FontSize',20,'FontWeight','Bold')
-ylabel('Flux Density (T)','FontSize',20,'FontWeight','Bold')
-title('Air Gap Magnetic Field Density');
-xlim([tau_p*3000/2 tau_p*7000/2]);
-%  ylim([0 0.1]);
-grid on
-L1=sprintf('Analytical Result Brms=%.2f T', rms(BI));
-L2=sprintf('FEA Result Brms=%.2f T', rms(Bz)');
-legend(L1,L2);
 

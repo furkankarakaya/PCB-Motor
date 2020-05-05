@@ -7,13 +7,16 @@ k_w=sin(90*pi/180)*sin(30*pi/180)/(3*sin(10*pi/180));  %Winding factor
 k_w3=sin(90*3*pi/180)*sin(3*30*pi/180)/(3*sin(3*10*pi/180));
 k_w7=sin(90*7*pi/180)*sin(7*30*pi/180)/(3*sin(7*10*pi/180));
 k_w9=sin(90*9*pi/180)*sin(9*30*pi/180)/(3*sin(9*10*pi/180));
-B_max=0.8598;   %Max of fundamental of airgap B field
-B3_max=-0.1133;   %Max of fundamental of airgap B field
-B7_max=0.0133;
-B9_max=-0.0085;
+B_max=0.8325;   %Max of fundamental of airgap B field
+B3_max=-0.1104;   %Max of fundamental of airgap B field
+B7_max=0.0130;
+B9_max=-0.0083;
 N=48;    %Number of series turns
+r_fac=1.098*sin(103*r-2.093)+0.1324*sin(436.6*r+1.804)+1.566*sin(904.4*r+4.041)+1.587*sin(898.3*r+1.116);
 
-f=k_w*N*B_max*sin(w*t+pole*teta/2)*r;
+% Torque=avg_BI*J*sin((45-11.25)*pi/180)*(288*25.053*0.8*0.07e-09)*(46+25)*0.5e-03;
+
+f=r_fac*k_w*N*B_max*sin(w*t+pole*teta/2)*r;
 g1=int(f, teta, -330643/(170000*2)+r*1577/(34*2) , 330643/(170000*2)-r*1577/(34*2));
 h1=int(g1, r, 25e-03, 31.817e-03);
 g2=int(f, teta, -26.95*pi/360 , 26.95*pi/360);
@@ -30,7 +33,7 @@ m1=feval(l1,time);
 m2=feval(l2,time);
 m3=feval(l3,time);
 
-f3=k_w3*N*B3_max*sin(3*w*t+3*pole*teta/2)*r;
+f3=r_fac*k_w3*N*B3_max*sin(3*w*t+3*pole*teta/2)*r;
 g13=int(f3, teta, -330643/(170000*2)+r*1577/(34*2) , 330643/(170000*2)-r*1577/(34*2));
 h13=int(g13, r, 25e-03, 31.817e-03);
 g23=int(f3, teta, -26.95*pi/360 , 26.95*pi/360);
@@ -47,7 +50,7 @@ m13=feval(l13,time);
 m23=feval(l23,time);
 m33=feval(l33,time);
 
-f7=k_w7*N*B7_max*sin(7*w*t+7*pole*teta/2)*r;
+f7=r_fac*k_w7*N*B7_max*sin(7*w*t+7*pole*teta/2)*r;
 g17=int(f7, teta, -330643/(170000*2)+r*1577/(34*2) , 330643/(170000*2)-r*1577/(34*2));
 h17=int(g17, r, 25e-03, 31.817e-03);
 g27=int(f7, teta, -26.95*pi/360 , 26.95*pi/360);
@@ -65,7 +68,7 @@ m27=feval(l27,time);
 m37=feval(l37,time);
 
 
-f9=k_w*N*B9_max*sin(9*w*t+9*pole*teta/2)*r;
+f9=r_fac*k_w*N*B9_max*sin(9*w*t+9*pole*teta/2)*r;
 g19=int(f9, teta, -330643/(170000*2)+r*1577/(34*2) , 330643/(170000*2)-r*1577/(34*2));
 h19=int(g19, r, 25e-03, 31.817e-03);
 g29=int(f9, teta, -26.95*pi/360 , 26.95*pi/360);
