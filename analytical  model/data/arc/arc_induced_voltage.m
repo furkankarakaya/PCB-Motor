@@ -166,11 +166,11 @@ hold all;
 an_mag_arc=[an_mag_arc, zeros(1, length(test_arc_fft) - length(an_mag_arc))];
 an_fr_arc=[an_fr_arc, zeros(1, length(test_arc_freq) - length(an_fr_arc))];
 freq=transpose(linspace(0,374,375));
-x=[freq(1:51) freq(1:51) freq(1:51)];
-y=[transpose(an_mag_arc(1:51)) magInducedVoltagePhaseA test_arc_fft(1:51) ];
+x=[freq(1:50) freq(1:50) freq(1:50)];
+y=[transpose(an_mag_arc(1:50)) magInducedVoltagePhaseA(1:50) test_arc_fft(1:50) ];
 bar(x,y);
 xlabel('Harmonic Order','FontSize',40,'FontWeight','Bold')
-ylabel('Magnitude of Induced Voltage (V)','FontSize',40,'FontWeight','Bold')
+ylabel('Induced Voltage (V)','FontSize',40,'FontWeight','Bold')
 % title('Radial Winding Induced Voltage FFT Result - 2000 RPM ');
 % L1=sprintf('Analytical Results: Fundamental = %.3f V ',max(an_mag_arc));
 % L2=sprintf('FEA Results: Fundamental = %.3f V ',max(magInducedVoltagePhaseA));
@@ -180,6 +180,8 @@ legend('Analytical Result','FEA Result','Test Result');
 grid on
 xlim([0.6 3.5]);
 ylim([0 9]);
+xticks([1 2 3]);
+yticks([0 3 6 9]);
 % title('ARC Winding Induced Voltage FFT Result - 2000 RPM ');
 %%
 test_arc_freq=0:1:374;

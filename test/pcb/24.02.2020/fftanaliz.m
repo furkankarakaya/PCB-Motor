@@ -98,8 +98,8 @@ set(0,'defaultLegendOrientation','vertical');
 figure;
 hold all;
 
-x=[freq(1:51) freq(1:51) freq(1:51)];
-y=[0.92*transpose(an_mag_arc(1:51)) magInducedVoltagePhaseA test_con_fft(1:51) ];
+x=[freq(1:51) freq(1:51)];
+y=[magInducedVoltagePhaseA test_con_fft(1:51) ];
 bar(x,y);
 xlabel('Harmonic Order','FontSize',40,'FontWeight','Bold')
 ylabel('Magnitude of Induced Voltage (V)','FontSize',40,'FontWeight','Bold')
@@ -108,10 +108,10 @@ ylabel('Magnitude of Induced Voltage (V)','FontSize',40,'FontWeight','Bold')
 % L2=sprintf('FEA Results: Fundamental = %.3f V ',max(magInducedVoltagePhaseA));
 % L3=sprintf('Test Results: Fundamental = %.3f V ',max(test_arc_fft));
 % legend(L1,L2,L3);
-legend('Analytical Result','FEA Result','Test Result');
+legend('FEA Result','Test Result');
 grid on
 xlim([0.6 3.5]);
-ylim([0 9]);
+ylim([0 10]);
 %%
 % %% Harmonic Analysis
 % 

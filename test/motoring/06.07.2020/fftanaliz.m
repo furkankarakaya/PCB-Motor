@@ -5,7 +5,7 @@
 % filter_freq= 400000; %Hz
 time_array = time_1500 - time_1500(1);
 Tstep = (time_array(2) - time_array(1));
-time_array2 = transpose(0:Tstep:100e-3-Tstep); % 45 ms of data is taken
+time_array2 = transpose(0:Tstep:500e-3); % 45 ms of data is taken
 
 % Vdc1 - Rectifier - No int
 
@@ -19,7 +19,7 @@ sim('for_fft.slx');
 
 fft_cycle = 1;
 fft_start = 0;
-fft_fund = 266.67;
+fft_fund = 421.33;
 fft_maxfreq = 200000;
 fft_THDmaxfreq = 200000;
 % h_level=0.1;
@@ -36,74 +36,41 @@ InducedVoltagePhaseA_FFTDATA.THDmaxFrequency = fft_THDmaxfreq;
 InducedVoltagePhaseA_FFTDATA = power_fftscope(InducedVoltagePhaseA_FFTDATA);
 
 %% Plot the FFT result (magnitude) of module's DC currents
-
+test_rad_fft=InducedVoltagePhaseA_FFTDATA.mag;
+test_rad_freq=InducedVoltagePhaseA_FFTDATA.freq;
 figure;
 hold all;
-freq=transpose(linspace(0,374,375));
-x=[freq(1:20) freq(1:20) freq(1:20)];
-y=[transpose(e_a_h_peak(1:20)) magInducedVoltagePhaseA(1:20) test_con_fft(1:20) ];
-% x=[FreqkHz./FreqkHz(2) FreqkHz./FreqkHz(2)];
-% y=[InducedVoltagePhaseA_FFTDATA.mag(1:51) magInducedVoltagePhaseA];
-%%
-k_scaling = 4;          % scaling factor of the figure
-k_width_hight = 2;      % width:hight ratio of the figure
-width = 8.8 * k_scaling;
-hight = width / k_width_hight;
-% figure margins
-top = 0.5;  % normalized top margin
-bottom = 3;	% normalized bottom margin
-left = 3.5;	% normalized left margin
-right = 1;  % normalized right margin
-% set default figure configurations
-set(0,'defaultFigureUnits','centimeters');
-set(0,'defaultFigurePosition',[0 0 width hight]);
-set(0,'defaultLineLineWidth',1*k_scaling);
-set(0,'defaultAxesLineWidth',0.1*k_scaling);
-set(0,'defaultLineMarkerSize',3.1*k_scaling);
-set(0,'defaultAxesGridLineStyle',':');
-set(0,'defaultAxesYGrid','on');
-set(0,'defaultAxesXGrid','on');
-set(0,'defaultAxesFontName','Times New Roman');
-set(0,'defaultAxesFontSize',8*k_scaling);
-set(0,'defaultTextFontName','Times New Roman');
-set(0,'defaultTextFontSize',8*k_scaling);
-set(0,'defaultLegendFontName','Times New Roman');
-set(0,'defaultLegendFontSize',8*k_scaling);
-set(0,'defaultAxesUnits','normalized');
-set(0,'defaultAxesPosition',[left/width bottom/hight (width-left-right)/width  (hight-bottom-top)/hight]);
-set(0,'defaultAxesColorOrder',[0 0 0]);
-set(0,'defaultAxesTickDir','out');
-set(0,'defaultFigurePaperPositionMode','auto');
-% you can change the Legend Location to whatever as you wish
-set(0,'defaultLegendLocation','northeast');
-set(0,'defaultLegendBox','on');
-set(0,'defaultLegendOrientation','vertical');
-bar(x,y);
-% bar(InducedVoltagePhaseA_FFTDATA.freq(1:51),InducedVoltagePhaseA_FFTDATA.mag(1:51));
-xlabel('Harmonic Order','FontSize',40,'FontWeight','Bold')
-ylabel('Induced Voltage (V)','FontSize',40,'FontWeight','Bold')
+plot(InducedVoltagePhaseA_FFTDATA.freq./fft_fund,InducedVoltagePhaseA_FFTDATA.mag);
+xlabel('Frequency','FontSize',14,'FontWeight','Bold')
+ylabel('Magnitude of Induced Voltage (V)','FontSize',14,'FontWeight','Bold')
+title('Phase Voltage FFT Result - 3160 RPM ');
+L1=sprintf('Test Results: Vfundamental = %.3f V ',max(InducedVoltagePhaseA_FFTDATA.mag(1:60)));
+legend(L1);
 grid on
-xlim([0.6 3.5]);
-ylim([0 9]);
-xticks([1 2 3]);
-yticks([0 3 6 9]);
-legend('Analytical Result','FEA Result','Test Result');
-
-
+% an_mag_arc=[an_mag_arc, zeros(1, length(magInducedVoltagePhaseA) - length(an_mag_arc))];
+% an_fr_arc=[an_fr_arc, zeros(1, length(FreqkHz) - length(an_fr_arc))];
+% deneme=linspace(1,99,50);
+% deneme=[0 deneme];
+% deneme2=0:1:50;
+% test_arc_fft=InducedVoltagePhaseA_FFTDATA.mag;
+% test_arc_freq=InducedVoltagePhaseA_FFTDATA.freq;
 %%
 % figure;
 % hold all;
-% plot(xaxis,VarName2,'Linewidth',2);
-% plot(xaxis,VarName3,'Linewidth',2);
-% plot(xaxis,VarName4,'Linewidth',2);
+% plot(time_1500+0.00251,phase_a_2000,'Linewidth',2);
+% plot(Timems./1000,InducedVoltagePhaseA,'Linewidth',2);
+% plot(time-9.25e-04,-an_vol_arc,'Linewidth',2);
 % set(gca,'FontSize',14);
 % xlabel('Time (s)','FontSize',14,'FontWeight','Bold')
 % ylabel('Induced Phase Voltages (V)','FontSize',14,'FontWeight','Bold')
-% %  xlim([-5e-03 5e-03]);
+% xlim([0 0.005645]);
 % %  ylim([-9 9]);
 % grid on
-% legend('Phase A','Phase B','Phase C');
-% title('Concentric Winding Induced Voltage - 2000 RPM ');
+% L1=sprintf('Test Results: Vrms = %.3f V ',rms(phase_a_2000));
+% L2=sprintf('FEA Results: Vrms = %.3f V ',rms(InducedVoltagePhaseA));
+% L3=sprintf('Analytical results: Vrms = %.3f V ',rms(an_vol_arc));
+% legend(L1,L2,L3);
+% title('ARC Winding Induced Voltage - 2000 RPM ');
 %%
 % %% Harmonic Analysis
 % 

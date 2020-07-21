@@ -54,6 +54,9 @@ grid on
 title('UEW Parallel Winding Induced Voltage FFT Result - 2000 RPM ');
 
 %%
+test_uew_fft=InducedVoltagePhaseA_FFTDATA.mag;
+test_uew_freq=InducedVoltagePhaseA_FFTDATA.freq;
+%%
 % figure;
 % hold all;
 % plot(xaxis,VarName2,'Linewidth',2);
